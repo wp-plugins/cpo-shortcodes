@@ -1,0 +1,46 @@
+=== CPO Shortcodes ===
+Contributors: cpothemes
+Donate link: http://example.com/
+Tags: button, counter, message, shortcode, share, gallery, slideshow, accordion, toggle, content, short code, tooltip, jquery, spoiler, links, list, custom, leading, notice, icon, touch, icons, team, testimonial, bar, progress, feed, portfolio, shortcodes, map, google map, animation, css3, transition
+Requires at least: 3.5
+Tested up to: 3.7.1
+Stable tag: trunk
+License: GPLv2
+
+Create incredible pages full of interactive elements with these shortcodes
+
+== Description ==
+
+The [CPO Shortcodes](http://cpothemes.com/shortcodes) is a WordPress plugin that provides you with an incredible number of shortcodes. You can use over 30+ different elements to create just about any layout you want to.
+
+This plugin is designed to give you a lot of freedom for creating full multimedia pages. Add elements such as buttons, notifications, messages, notices, tooltips, team members, testimonials, progress bars, animations, inline maps, leading paragraphs, custom lists, icons, counters, and much more.
+
+== Plugin Features ==
+
+* Shortcode Generator
+* Over 30+ shortcodes
+* Responsive elements
+
+== Installation ==
+
+1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. You are now ready to use the shortcodes from the WordPress Visual Editor
+
+== Frequently Asked Questions ==
+
+[Visit Our Support Forum At CPOThemes](http://www.cpothemes.com/forums/)
+
+
+== Screenshots ==
+
+1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
+the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets 
+directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png` 
+(or jpg, jpeg, gif).
+2. This is the second screen shot
+
+== Changelog ==
+
+= 1.0 =
+* Plugin release, yay!
