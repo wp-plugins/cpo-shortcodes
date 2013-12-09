@@ -1,17 +1,17 @@
 === CPO Shortcodes ===
 Contributors: cpothemes
 Donate link: http://example.com/
-Tags: button, counter, message, shortcode, share, gallery, slideshow, accordion, toggle, content, short code, tooltip, jquery, spoiler, links, list, custom, leading, notice, icon, touch, icons, team, testimonial, bar, progress, feed, portfolio, shortcodes, map, google map, animation, css3, transition
+Tags: button, counter, message, shortcode, share, gallery, slideshow, accordion, toggle, content, short code, tooltip, jquery, spoiler, links, list, custom, leading, notice, icon, touch, icons, team, testimonial, bar, progress, feed, portfolio, shortcodes, map, google map, animation, css3, transition, pricing, pricing table
 Requires at least: 3.5
 Tested up to: 3.7.1
 Stable tag: trunk
 License: GPLv2
 
-Create incredible pages full of interactive elements with these shortcodes
+Create incredible pages full of interactive elements with this shortcode pack, comprised of over 30+ different elements.
 
 == Description ==
 
-The [CPO Shortcodes](http://cpothemes.com/shortcodes) is a WordPress plugin that provides you with an incredible number of shortcodes. You can use over 30+ different elements to create just about any layout you want to.
+[CPO Shortcodes](http://cpothemes.com/plugin/cpo-shortcodes) is a WordPress plugin that provides you with an incredible number of shortcodes. You can use over 30+ different elements to create just about any layout you want to.
 
 This plugin is designed to give you a lot of freedom for creating full multimedia pages. Add elements such as buttons, notifications, messages, notices, tooltips, team members, testimonials, progress bars, animations, inline maps, leading paragraphs, custom lists, icons, counters, and much more.
 
