@@ -34,11 +34,11 @@ This plugin is designed to give you a lot of freedom for creating full multimedi
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets 
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png` 
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. Quick Insert button for immediate markup
+2. Multiple button sizes and colors. Choose from a predefined palette or a custom HEX color
+3. Add message boxes, notifications, and highlighted boxes with custom background colors
+4. Create testimonials, team members, or inline features
+5. Add custom-colored pricing tables to your pages
 
 == Changelog ==
 
