@@ -111,7 +111,6 @@ body .ctsc-button-icon { margin-right:0.5em; }
 .ctsc-progress { display:block; overflow:hidden; background:rgba(0,0,0,0.1); margin:0 0 25px; height:30px; line-height:30px; padding:0; border-radius:3px; box-shadow:inset 0 1px 2px #999; }
 .ctsc-progress .bar-title { display:inline-block; color:#fff; padding:5px 10px; border-radius:3px; }
 .ctsc-progress .bar-content { float:left; border-radius:2px; text-align:left; height:30px; line-height:20px; width:0; }
-.ctsc-primary-color-bg { background:#f90; }
 .ctsc-progress .bar-icon { margin-right:10px; }
 /* Bar Size */
 .ctsc-progress-small { margin-top:4px; }
@@ -385,6 +384,12 @@ body .ctsc-button-icon { margin-right:0.5em; }
 .ctsc-counter-small { font-size:0.8em; }
 .ctsc-counter-medium { font-size:1.3em; }
 .ctsc-counter-large { font-size:1.5em; }
+
+
+/* COLORS */
+.ctsc-primary-color { color:#f90; }
+.ctsc-primary-color-border { border-color:#f90; }
+.ctsc-primary-color-bg { background-color:#f90; }
 
 
 /* DARK CONTENT */
