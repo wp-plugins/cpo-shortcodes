@@ -3,7 +3,7 @@
 Plugin Name: CPO Shortcodes
 Description: Lets you use over 30 different shortcodes to create incredible, rich-media pages. You can easily insert them using a shortcode generator added to the WordPress visual editor toolbar.
 Author: CPOThemes
-Version: 1.0.1
+Version: 1.0.2
 Author URI: http://www.cpothemes.com
 */
 

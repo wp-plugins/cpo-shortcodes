@@ -134,8 +134,8 @@ if(!function_exists('ctsc_shortcode_definition')){
 		$content = ctsc_do_shortcode($content);
 		
 		$output = '<dl class="ctsc-definition">';
-		if($title != '') $output .= '<dt class="definition-term">'.$title.'</dt>';
-		if($content != '') $output .= '<dd class="definition-description">'.$content.'</dd>';
+		if($title != '') $output .= '<dt class="ctsc-definition-term">'.$title.'</dt>';
+		if($content != '') $output .= '<dd class="ctsc-definition-description">'.$content.'</dd>';
 		$output .= '</dl>';
 		
 		return $output;

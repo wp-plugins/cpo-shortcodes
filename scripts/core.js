@@ -1,11 +1,12 @@
 jQuery(document).ready(function(){
     	
 	//INLINE SLIDESHOWS
-	//Enables inline slideshows
 	jQuery('.ctsc-slideshow-slides').each(function(){
 		var p = this.parentNode;
 		jQuery(this).cycle({
-			fx: 'fade',
+			speed: jQuery('.ctsc-slideshow-slides', p).data('speed'),
+			timeout: jQuery('.ctsc-slideshow-slides', p).data('timeout'),
+			fx: jQuery('.ctsc-slideshow-slides', p).data('animation'),
 			pause: true,
 			pauseOnPagerHover: true,
 			containerResize: false,

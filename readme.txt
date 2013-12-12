@@ -42,5 +42,11 @@ This plugin is designed to give you a lot of freedom for creating full multimedi
 
 == Changelog ==
 
+= 1.0.2 =
+* Fixed team shortcodes and added animation, timeout, and speed parameters to slideshows
+
+= 1.0.1 =
+* Fixed minor CSS issues and markup corrections
+
 = 1.0 =
 * Plugin release, yay!

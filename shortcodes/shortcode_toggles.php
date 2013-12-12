@@ -101,16 +101,21 @@ if(!function_exists('ctsc_shortcode_slideshow')){
 		wp_enqueue_script('ctsc-cycle');
 		
 		$attributes = extract(shortcode_atts(array(
-		'animation' => '', 
+		'animation' => 'fade', 
+		'speed' => '1500', 
+		'timeout' => '6000', 
 		'navigation' => '', 
 		'pager' => '', 
 		'state' => ''),
 		$atts));		
 		$content = trim($content);
 		
+		$animation = ' data-animation="'.$animation.'"';
+		$speed = ' data-speed="'.$speed.'"';
+		$timeout = ' data-timeout="'.$timeout.'"';
 		
 		$output = '<div class="ctsc-slideshow">';
-		$output .= '<div class="ctsc-slideshow-slides">';
+		$output .= '<div class="ctsc-slideshow-slides"'.$animation.$speed.$timeout.'>';
 		$output .= ctsc_do_shortcode($content);
 		$output .= '</div>';
 		if($navigation != 'none'){
