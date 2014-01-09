@@ -422,7 +422,7 @@ if(!function_exists('ctsc_shortcode_pricing_cell')){
 		
 		$output .= '<style>';
 		//Section Styling
-		$output .= '.pricing-column-'.$random_id.' .ctsc-pricing-item-highlight .ctsc-pricing-title {';
+		$output .= '.ctsc-pricing-column-'.$random_id.' .ctsc-pricing-item-highlight .ctsc-pricing-title {';
 		if($color != '') $output .= "color:#fff; background:$color;";
 		$output .= ' }';
 		$output .= '</style>';
