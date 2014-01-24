@@ -38,7 +38,7 @@ Defines the styles that control shortcode appearance
 .ctsc-section:last-child { margin-bottom:0; border-bottom:none; }
 .ctsc-section-content { position:relative; }
 .ctsc-section + .ctsc-section { margin-top:-40px; border-top:none; }
-.page-content > .ctsc-section:first-child { margin-top:-30px; border-top:none; }
+/*.page-content > .ctsc-section:first-child { margin-top:-30px; border-top:none; }*/
 /* Headings */
 .ctsc-section-heading {  margin-bottom:0; padding:20px 0 60px; }
 .ctsc-section .ctsc-section-title { text-align:center; margin:0; }
@@ -222,7 +222,7 @@ body .ctsc-button-icon { margin-right:0.5em; }
 
 /* FEATURES */
 .ctsc-feature { margin:0 0 30px; }
-.ctsc-feature-icon { display:block; font-family:'fontawesome'; text-align:center; float:left; font-size:40px; height:auto; width:40px; margin:0; }
+.ctsc-feature-icon { display:block; color:#555; font-family:'fontawesome'; text-align:center; float:left; font-size:40px; height:auto; width:40px; margin:0; }
 .ctsc-feature-title { clear:none; font-size:1.3em; line-height:1.9; margin:10px 0 0 50px; }
 .ctsc-feature-content { clear:both; }
 .ctsc-feature-horizontal .ctsc-feature-icon { font-size:40px; width:40px; }
@@ -365,7 +365,7 @@ body .ctsc-button-icon { margin-right:0.5em; }
 .noimage .ctsc-member-content { margin-left:0; }
 .ctsc-member-content p { margin-bottom:5px; }
 .ctsc-member-meta { margin-top:20px; }
-.ctsc-member-meta  a { display:inline-block; font-size:16px; text-align:center; line-height:30px; width:30px; height:30px; margin-right:10px; border-width:1px; border-style:solid; border-radius:3px; }
+.ctsc-member-meta  a { display:inline-block; font-size:16px; text-align:center; color:#999; line-height:30px; width:30px; height:30px; margin-right:10px; border:1px solid #999; border-radius:3px; }
 .ctsc-member-meta  a:hover { text-decoration:none; }
 
 
@@ -385,12 +385,6 @@ body .ctsc-button-icon { margin-right:0.5em; }
 .ctsc-counter-small { font-size:0.8em; }
 .ctsc-counter-medium { font-size:1.3em; }
 .ctsc-counter-large { font-size:1.5em; }
-
-
-/* COLORS */
-.ctsc-primary-color { color:#f90; }
-.ctsc-primary-color-border { border-color:#f90; }
-.ctsc-primary-color-bg { background-color:#f90; }
 
 
 /* DARK CONTENT */

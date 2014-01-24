@@ -180,7 +180,7 @@ if(!function_exists('ctsc_shortcode_bar')){
 			case 'yellow': $bar_color = ' ctsc-gradient-yellow'; break;
 			case 'black': $bar_color = ' ctsc-gradient-black'; break;
 			case 'white': $bar_color = ' ctsc-gradient-white'; break;
-			default: $bar_color = ' ctsc-primary-color-bg'; break;
+			default: $bar_color = ' ctsc-gradient-orange'; break;
 		}
 		if($icon != '') $icon = '<span class="bar-icon icon-'.htmlentities($icon).'"></span> ';
 		
@@ -252,16 +252,19 @@ if(!function_exists('ctsc_shortcode_feature')){
 		$attributes = extract(shortcode_atts(array(
 		'title' => '(No Title)', 
 		'icon' => '', 
+		'color' => '', 
 		'style' => ''),
 		$atts));
 		
 		$content = trim($content);
 		$title = trim(htmlentities(strip_tags($title), ENT_QUOTES, "UTF-8"));
+		$icon_color = '';
+		if($color != '') $icon_color = ' style="color:'.$color.';"';
 		
 		$output = '<div class="ctsc-feature ctsc-feature-'.$style.'">';
 		if($icon != ''){
 			wp_enqueue_style('style_fontawesome');
-			$output .= '<div class="ctsc-feature-icon ctsc-primary-color icon-'.$icon.'"></div>';
+			$output .= '<div class="ctsc-feature-icon icon-'.$icon.'"'.$icon_color.'></div>';
 		}
 		$output .= '<h4 class="ctsc-feature-title">'.$title.'</h4>';
 		$output .= '<div class="ctsc-feature-content">'.ctsc_do_shortcode($content).'</div>';
@@ -360,13 +363,13 @@ if(!function_exists('ctsc_shortcode_team')){
 		if($title != '') $output .= "<span class='ctsc-member-title'>$title</span>";
 		$output .= $content;
 		$output .= '<div class="ctsc-member-meta">';
-		if($web != '') $output .= "<a class='ctsc-primary-color ctsc-primary-color-border' href='$web'><span class='icon-link'></span></a>";
-		if($facebook != '') $output .= "<a class='ctsc-primary-color ctsc-primary-color-border' href='$facebook'><span class='icon-facebook'></span></a>";
-		if($twitter != '') $output .= "<a class='ctsc-primary-color ctsc-primary-color-border' href='$twitter'><span class='icon-twitter'></span></a>";
-		if($gplus != '') $output .= "<a class='ctsc-primary-color ctsc-primary-color-border' href='$gplus'><span class='icon-google-plus'></span></a>";
-		if($linkedin != '') $output .= "<a class='ctsc-primary-color ctsc-primary-color-border' href='$linkedin'><span class='icon-linkedin'></span></a>";
-		if($pinterest != '') $output .= "<a class='ctsc-primary-color ctsc-primary-color-border' href='$pinterest'><span class='icon-pinterest'></span></a>";
-		if($tumblr != '') $output .= "<a class='ctsc-primary-color ctsc-primary-color-border' href='$tumblr'><span class='icon-tumblr'></span></a>";
+		if($web != '') $output .= "<a href='$web'><span class='icon-link'></span></a>";
+		if($facebook != '') $output .= "<a href='$facebook'><span class='icon-facebook'></span></a>";
+		if($twitter != '') $output .= "<a href='$twitter'><span class='icon-twitter'></span></a>";
+		if($gplus != '') $output .= "<a href='$gplus'><span class='icon-google-plus'></span></a>";
+		if($linkedin != '') $output .= "<a href='$linkedin'><span class='icon-linkedin'></span></a>";
+		if($pinterest != '') $output .= "<a href='$pinterest'><span class='icon-pinterest'></span></a>";
+		if($tumblr != '') $output .= "<a href='$tumblr'><span class='icon-tumblr'></span></a>";
 		$output .= '</div>';
 		$output .= '</div>';
 		$output .= '</div>';
@@ -429,7 +432,7 @@ if(!function_exists('ctsc_shortcode_pricing_cell')){
 		
 		$output .= '<div class="ctsc-pricing-item ctsc-pricing-item-'.$type.'">';
 		if($title != ''){
-			$output .= '<div class="ctsc-pricing-title ctsc-primary-color">';
+			$output .= '<div class="ctsc-pricing-title">';
 			$output .= $title;
 			if($subtitle != '') $output .= '<div class="ctsc-pricing-subtitle">'.$subtitle.'</div>';
 			$output .= '</div>';
