@@ -34,7 +34,7 @@
 					current_object.render(c, "Dropcap", "dropcap");
 					current_object.render(c, "Lead Paragraph", "leading");
 					current_object.render(c, "Custom List", "list");
-					//current_object.render(c, "Recent Items", "recent_items");
+					current_object.render(c, "Post List", "post_list");
 					
 					//Social
 					c = b.addMenu({title:"Social"});
@@ -121,8 +121,8 @@
 					if(value == "list")
 						tinyMCE.activeEditor.selection.setContent('[list icon="ok" style="round"]' + selected_content + '[/list]');
 					
-					if(value == "recent_items")
-						tinyMCE.activeEditor.selection.setContent('[recent_posts number="5"]');
+					if(value == "post_list")
+						tinyMCE.activeEditor.selection.setContent('[posts type="post" number="5" columns="1"]');
 					
 					
 					//Social
