@@ -11,6 +11,7 @@ if(!function_exists('ctsc_shortcode_button')){
 			'size' => '',
 			'icon' => '',
 			'id' => '',
+			'target' => '',
 			'color' => ''
 			), 
 			$atts));
@@ -41,6 +42,8 @@ if(!function_exists('ctsc_shortcode_button')){
 		if($position != '') $position = ' ctsc-button-'.$position;
 		if($id != '') $id = ' id="'.$id.'"';
 		
+		if($target != '') $target = ' target="'.$target.'"';
+		
 		$button_class = '';
 		if($icon != ''){
 			$button_class .= ' ctsc-button-has-icon';
@@ -48,7 +51,7 @@ if(!function_exists('ctsc_shortcode_button')){
 		}
 		
 		$output = '';
-		$output .= '<a class="ctsc-button ctsc-button-'.$color.$button_size.$position.' '.$button_class.'" href="'.$url.'"'.$button_style.$id.'>'.$icon.$content.'</a>';
+		$output .= '<a class="ctsc-button ctsc-button-'.$color.$button_size.$position.' '.$button_class.'" href="'.$url.'"'.$button_style.$id.$target.'>'.$icon.$content.'</a>';
 		
 		
 		return $output;

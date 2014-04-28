@@ -2,8 +2,8 @@
 Contributors: cpothemes
 Donate link: http://example.com/
 Tags: button, counter, message, shortcode, share, gallery, slideshow, accordion, toggle, content, short code, tooltip, jquery, spoiler, links, list, custom, leading, notice, icon, touch, icons, team, testimonial, bar, progress, feed, portfolio, shortcodes, map, google map, animation, css3, transition, pricing, pricing table
-Requires at least: 3.5
-Tested up to: 3.7.1
+Requires at least: 3.9
+Tested up to: 3.9.0
 Stable tag: trunk
 License: GPLv2
 
@@ -41,6 +41,9 @@ This plugin is designed to give you a lot of freedom for creating full multimedi
 5. Add custom-colored pricing tables to your pages
 
 == Changelog ==
+
+= 1.1.0 =
+* Changed JS files to use the TinyMCE version 4.X API.
 
 = 1.0.2 =
 * Fixed team shortcodes and added animation, timeout, and speed parameters to slideshows

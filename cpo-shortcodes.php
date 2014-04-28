@@ -3,7 +3,7 @@
 Plugin Name: CPO Shortcodes
 Description: Lets you use over 30 different shortcodes to create incredible, rich-media pages. You can easily insert them using a shortcode generator added to the WordPress visual editor toolbar.
 Author: CPOThemes
-Version: 1.0.4
+Version: 1.1.0
 Author URI: http://www.cpothemes.com
 */
 
@@ -35,6 +35,12 @@ function ctsc_add_styles(){
 	
 }
 
+add_action('admin_enqueue_scripts', 'ctsc_add_admin_styles');
+function ctsc_add_admin_styles() {
+	$stylesheets_path = plugins_url('css/' , __FILE__);
+	wp_enqueue_style('ctsc-shortcodes-admin', $stylesheets_path.'mce.css');
+}
+
 
 //Custom function to do some cleanup on nested shortcodes
 //Used for columns and layout-related shortcodes
@@ -46,7 +52,7 @@ function ctsc_do_shortcode($content){
 
 
 //Add localized vars
-add_action('admin_enqueue_scripts', 'ctsc_shortcode_tinymce_vars');
+//add_action('admin_enqueue_scripts', 'ctsc_shortcode_tinymce_vars');
 function ctsc_shortcode_tinymce_vars($plugin_array) {  
 	$core_path = plugins_url('images/' , __FILE__);
 	wp_localize_script('jquery-ui-core', 'ctsc_shortcodes_vars', array('toolbar_icon' => $core_path.'icon_shortcodes.png'));
