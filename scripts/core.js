@@ -20,6 +20,26 @@ jQuery(document).ready(function(){
 		});    
 	});
 	
+	//CONTENT SLIDERS
+	jQuery('.ctsc-slider-slides').each(function(){
+		var p = this.parentNode;
+		jQuery(this).cycle({
+			speed: jQuery('.ctsc-slider-slides', p).data('speed'),
+			timeout: jQuery('.ctsc-slider-slides', p).data('timeout'),
+			fx: jQuery('.ctsc-slider-slides', p).data('animation'),
+			pause: true,
+			pauseOnPagerHover: true,
+			containerResize: false,
+			slideResize: false,
+			fit: 1,
+			before: ctsc_resize_slideshow,
+			after: ctsc_resize_slideshow,
+			prev: jQuery('.ctsc-slider-prev', p),
+			next: jQuery('.ctsc-slider-next', p),
+			pager: jQuery('.ctsc-slider-pages', p)
+		});    
+	});
+	
 	jQuery('.ctsc-map').each(function() {
 		var data = jQuery(this).data(), // Get the data from this element
 		options = { // Create map options object
@@ -46,6 +66,16 @@ jQuery(document).ready(function(){
 	
 	//FILL PROGRESS BARS
 	ctsc_waypoint_progress();
+	
+	//SKIPPING BUTTONS
+	//Adds smooth scrolling to an anchor link with the specified class
+	jQuery('.ctsc-back-top').click(function(e){
+		e.preventDefault();
+		var target_id = jQuery(this).attr('href');
+		jQuery('html, body').animate({
+			scrollTop: jQuery(target_id).offset().top
+		}, 1000);
+	});
 });
 
 //Resizes slideshow height after each transition
@@ -56,14 +86,12 @@ function ctsc_resize_slideshow(curr, next, opts, fwd) {
 
 function ctsc_waypoint_fade(){
 	if(jQuery.isFunction(jQuery.fn.waypoint)){
-		jQuery('.ctsc-area-animation').waypoint(function(){ 
+		jQuery('.ctsc-animation').waypoint(function(){ 
 			var area_delay = 0;
 			var element = jQuery(this);
 			if(jQuery(this).attr('data-delay'))	area_delay = jQuery(this).attr('data-delay');
-			setTimeout(function(){ element.addClass('ctsc-area-animation-active'); }, area_delay);
-		},{ 
-			offset:'80%'
-		});
+			setTimeout(function(){ element.addClass('ctsc-animation-active'); }, area_delay);
+		},{ offset:'80%' });
 	}
 }
 
