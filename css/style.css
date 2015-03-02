@@ -22,26 +22,44 @@ SHORTCODES
 
 
 /* COLUMNS */
-.ctsc-column { display:block; float:left; margin-right:2%; }
+.ctsc-column { display:block; float:left; margin-right:5%; }
 .ctsc-col1 { width:100%; }
-.ctsc-col2 { width:49%; }
-.ctsc-col3 { width:32%; }
-.ctsc-col3x2 { width:66%; }
-.ctsc-col4 { width:23.5%; }
-.ctsc-col4x2 { width:49%; }
-.ctsc-col4x3 { width:74.5%; }
-.ctsc-col5 { width:18.4%; }
-.ctsc-col5x2 { width:38.8%; }
-.ctsc-col5x3 { width:59.2%; }
-.ctsc-col5x4 { width:79.6%; }
-.ctsc-col6 { width:15%; }
-.ctsc-col6x2 { width:32%; }
-.ctsc-col6x3 { width:49%; }
-.ctsc-col6x4 { width:66%; }
-.ctsc-col6x5 { width:83%; }
+.ctsc-col2 { width:47.5%; }
+.ctsc-col3 { width:30%; }
+.ctsc-col3x2 { width:65%; }
+.ctsc-col4 { width:21.25%; }
+.ctsc-col4x2 { width:47.5%; }
+.ctsc-col4x3 { width:73.5%; }
+.ctsc-col5 { width:16%; }
+.ctsc-col5x2 { width:37%; }
+.ctsc-col5x3 { width:58%; }
+.ctsc-col5x4 { width:79%; }
+.ctsc-col6 { width:12.5%; }
+.ctsc-col6x2 { width:30%; }
+.ctsc-col6x3 { width:47.5%; }
+.ctsc-col6x4 { width:65%; }
+.ctsc-col6x5 { width:82.5%; }
 .ctsc-col-last { margin-right:0; }
 .ctsc-clear { display:block; clear:both; width:100%; }
-/* Columns with half padding */
+/* Columns with wide padding */
+.ctsc-column-wide { display:block; float:left; margin-right:8%; }
+.ctsc-column-wide.ctsc-col2 { width:46%; }
+.ctsc-column-wide.ctsc-col3 { width:28%; }
+.ctsc-column-wide.ctsc-col3x2 { width:64%; }
+.ctsc-column-wide.ctsc-col4 { width:19%; }
+.ctsc-column-wide.ctsc-col4x2 { width:46%; }
+.ctsc-column-wide.ctsc-col4x3 { width:73%; }
+.ctsc-column-wide.ctsc-col5 { width:13.6%; }
+.ctsc-column-wide.ctsc-col5x2 { width:35.2%; }
+.ctsc-column-wide.ctsc-col5x3 { width:56.8%; }
+.ctsc-column-wide.ctsc-col5x4 { width:78.4%; }
+.ctsc-column-wide.ctsc-col6 { width:10%; }
+.ctsc-column-wide.ctsc-col6x2 { width:28%; }
+.ctsc-column-wide.ctsc-col6x3 { width:46%; }
+.ctsc-column-wide.ctsc-col6x4 { width:64%; }
+.ctsc-column-wide.ctsc-col6x5 { width:82%; }
+.ctsc-column-wide.ctsc-col-last { margin-right:0; }
+/* Columns with narrow padding */
 .ctsc-column-narrow { display:block; float:left; margin-right:2%; }
 .ctsc-column-narrow.ctsc-col2 { width:49%; }
 .ctsc-column-narrow.ctsc-col3 { width:32%; }
@@ -59,6 +77,7 @@ SHORTCODES
 .ctsc-column-narrow.ctsc-col6x4 { width:66%; }
 .ctsc-column-narrow.ctsc-col6x5 { width:83%; }
 .ctsc-column-narrow.ctsc-col7 { width:12.57142%; }
+.ctsc-column-narrow.ctsc-col-last { margin-right:0; }
 /* Columns with no padding */
 .ctsc-column-fit { display:block; float:left; margin-right:0; }
 .ctsc-column-fit.ctsc-col2 { width:50%; }

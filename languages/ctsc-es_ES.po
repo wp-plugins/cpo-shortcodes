@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPShards Extensions\n"
+"Project-Id-Version: CPO Extensions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-26 17:26+0100\n"
-"PO-Revision-Date: 2014-05-26 17:50+0100\n"
+"POT-Creation-Date: 2015-03-02 15:42+0100\n"
+"PO-Revision-Date: 2015-03-02 15:44+0100\n"
 "Last-Translator: CPO <mvicedo@cpo.es>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -13,696 +13,491 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ./.\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 1.5.5\n"
 "X-Poedit-SearchPath-0: ../.\n"
+
+#: .././functions/custom.php:12
+msgid "CPO Shortcodes"
+msgstr "CPO Shortcodes"
+
+#: .././functions/custom.php:34
+msgid "Changes have been saved."
+msgstr "Las opciones de configuraci&oacute;n han sido guardadas."
+
+#: .././functions/custom.php:39
+msgid "Changes could not be saved."
+msgstr "Las opciones de configuraci&oacute;n no han podido ser guardadas."
+
+#: .././functions/custom.php:138
+msgid "Save Settings"
+msgstr "Guardar"
+
+#: .././functions/custom.php:210 .././functions/custom.php:232
+#: .././functions/custom.php:269
+#, fuzzy
+msgid "Theme Documentation"
+msgstr "Configuraci&oacute;n"
+
+#: .././functions/custom.php:212 .././functions/custom.php:273
+msgid "More Themes"
+msgstr "Más Temas"
+
+#: .././functions/custom.php:234
+#, fuzzy
+msgid "Support Forum"
+msgstr "Soporte"
+
+#: .././functions/custom.php:249
+#, fuzzy
+msgid "Theme Version"
+msgstr "Opciones del Tema"
+
+#: .././functions/custom.php:271
+#, fuzzy
+msgid "Support Forums"
+msgstr "Soporte"
+
+#: .././functions/custom.php:346
+msgid "default"
+msgstr "por defecto"
+
+#: .././functions/forms.php:43
+msgid "Yes"
+msgstr "S&iacute;"
+
+#: .././functions/forms.php:46
+msgid "No"
+msgstr "No"
+
+#: .././functions/forms.php:134
+msgid "Upload"
+msgstr "Subir"
+
+#: .././functions/forms.php:149
+msgid "This is a font preview"
+msgstr "Esta es una previsualización"
 
 #: .././metadata/metadata-general.php:38
 msgid "(None)"
 msgstr "(Ninguno)"
 
-#: .././shortcodes/shortcode-accordion.php:64
-msgid "Accordion"
-msgstr "Acordeón"
+#: .././metadata/metadata-settings.php:9
+msgid "Shortcode Prefix"
+msgstr "Prefijo de Shortcodes"
 
-#: .././shortcodes/shortcode-accordion.php:65
-msgid "An animated accordion with icons"
-msgstr "Un acordeón animado con iconos"
-
-#: .././shortcodes/shortcode-accordion.php:69
-#: .././shortcodes/shortcode-button.php:80
-#: .././shortcodes/shortcode-clients.php:55
-#: .././shortcodes/shortcode-counter.php:66
-#: .././shortcodes/shortcode-definition.php:46
-#: .././shortcodes/shortcode-definition.php:56
-#: .././shortcodes/shortcode-feature.php:62
-#: .././shortcodes/shortcode-focus.php:69
-#: .././shortcodes/shortcode-focus.php:74
-#: .././shortcodes/shortcode-list.php:63 .././shortcodes/shortcode-list.php:68
-#: .././shortcodes/shortcode-message.php:36
-#: .././shortcodes/shortcode-message.php:41
-#: .././shortcodes/shortcode-posts.php:125
-#: .././shortcodes/shortcode-pricing.php:90
-#: .././shortcodes/shortcode-pricing.php:125
-#: .././shortcodes/shortcode-progress.php:69
-#: .././shortcodes/shortcode-slideshow.php:67
-#: .././shortcodes/shortcode-team.php:72 .././shortcodes/shortcode-team.php:92
-#: .././shortcodes/shortcode-testimonial.php:60
-#: .././shortcodes/shortcode-testimonial.php:80
-msgid "Content"
-msgstr "Contenidos"
-
-#: .././shortcodes/shortcode-accordion.php:74
-#: .././shortcodes/shortcode-banner.php:79
-#: .././shortcodes/shortcode-counter.php:76
-#: .././shortcodes/shortcode-definition.php:51
-#: .././shortcodes/shortcode-pricing.php:95
-#: .././shortcodes/shortcode-progress.php:74
-#: .././shortcodes/shortcode-separator.php:73
-#: .././shortcodes/shortcode-team.php:82
-#: .././shortcodes/shortcode-testimonial.php:70
-#: .././widgets/widget_advert.php:50 .././widgets/widget_flickr.php:44
-#: .././widgets/widget_portfolio.php:76 .././widgets/widget_recentitems.php:73
-#: .././widgets/widget_recentposts.php:76 .././widgets/widget_social.php:136
-#: .././widgets/widget_subscribers.php:48 .././widgets/widget_tweets.php:114
-msgid "Title"
-msgstr "T&iacute;tulo"
-
-#: .././shortcodes/shortcode-accordion.php:75
-msgid "Accordion Title"
-msgstr "Título Del Acordeón"
-
-#: .././shortcodes/shortcode-accordion.php:80
-#: .././shortcodes/shortcode-banner.php:85
-#, fuzzy
-msgid "Contents"
-msgstr "Contenidos"
-
-#: .././shortcodes/shortcode-accordion.php:86
-#: .././shortcodes/shortcode-button.php:95
-#: .././shortcodes/shortcode-counter.php:91
-#: .././shortcodes/shortcode-feature.php:84
-#: .././shortcodes/shortcode-list.php:73
-#: .././shortcodes/shortcode-progress.php:89
-#: .././shortcodes/shortcode-separator.php:93
-msgid "Icon"
-msgstr "Icono"
-
-#: .././shortcodes/shortcode-accordion.php:93
-#: .././shortcodes/shortcode-button.php:90
-#: .././shortcodes/shortcode-counter.php:81
-#: .././shortcodes/shortcode-progress.php:84
-msgid "Size"
-msgstr "Tamaño"
-
-#: .././shortcodes/shortcode-accordion.php:97
-#: .././shortcodes/shortcode-banner.php:96
-#: .././shortcodes/shortcode-button.php:125
-#: .././shortcodes/shortcode-clients.php:71
-#: .././shortcodes/shortcode-counter.php:96
-#: .././shortcodes/shortcode-definition.php:61
-#: .././shortcodes/shortcode-feature.php:94
-#: .././shortcodes/shortcode-focus.php:99
-#: .././shortcodes/shortcode-list.php:88
-#: .././shortcodes/shortcode-posts.php:175
-#: .././shortcodes/shortcode-pricing.php:155
-#: .././shortcodes/shortcode-separator.php:98
-#: .././shortcodes/shortcode-slideshow.php:102
-#: .././shortcodes/shortcode-team.php:132
-#: .././shortcodes/shortcode-testimonial.php:90
-msgid "Element ID"
-msgstr "ID del Elemento"
-
-#: .././shortcodes/shortcode-accordion.php:102
-#: .././shortcodes/shortcode-banner.php:101
-#: .././shortcodes/shortcode-button.php:130
-#: .././shortcodes/shortcode-clients.php:76
-#: .././shortcodes/shortcode-counter.php:101
-#: .././shortcodes/shortcode-definition.php:66
-#: .././shortcodes/shortcode-feature.php:99
-#: .././shortcodes/shortcode-focus.php:104
-#: .././shortcodes/shortcode-list.php:93
-#: .././shortcodes/shortcode-posts.php:180
-#: .././shortcodes/shortcode-pricing.php:160
-#: .././shortcodes/shortcode-separator.php:103
-#: .././shortcodes/shortcode-slideshow.php:107
-#: .././shortcodes/shortcode-team.php:137
-#: .././shortcodes/shortcode-testimonial.php:95
-msgid "CSS Classes"
-msgstr "Clases CSS"
-
-#: .././shortcodes/shortcode-accordion.php:107
-#: .././shortcodes/shortcode-banner.php:106
-#: .././shortcodes/shortcode-button.php:135
-#: .././shortcodes/shortcode-clients.php:81
-#: .././shortcodes/shortcode-counter.php:106
-#: .././shortcodes/shortcode-definition.php:71
-#: .././shortcodes/shortcode-feature.php:104
-#: .././shortcodes/shortcode-focus.php:109
-#: .././shortcodes/shortcode-list.php:98
-#: .././shortcodes/shortcode-posts.php:185
-#: .././shortcodes/shortcode-pricing.php:165
-#: .././shortcodes/shortcode-separator.php:108
-#: .././shortcodes/shortcode-slideshow.php:112
-#: .././shortcodes/shortcode-team.php:142
-#: .././shortcodes/shortcode-testimonial.php:100
-msgid "Entrance Animation"
-msgstr "Animación De Entrada"
-
-#: .././shortcodes/shortcode-banner.php:63
-msgid "Banner"
-msgstr "Banner"
-
-#: .././shortcodes/shortcode-banner.php:64
-msgid "Image banners with overlay text"
+#: .././metadata/metadata-settings.php:10
+msgid ""
+"Specifies a prefix for all shortcodes, so that you may avoid possible "
+"conflicts when installing themes or other plugins. If using a prefix, an "
+"underscore (_) will be used as a separator."
 msgstr ""
+"Indica un prefijo para todos los shortcodes, para evitar posibles conflictos "
+"con otros temas o plugins instalados. Si utilizas un prefijo, se utilizará "
+"una barra (_) como separador."
 
-#: .././shortcodes/shortcode-banner.php:68
-#, fuzzy
-msgid "Images"
-msgstr "P&aacute;ginas"
+#: .././shortcodes/shortcode-column.php:235
+msgid "Background Image"
+msgstr "Imagen de Fondo"
 
-#: .././shortcodes/shortcode-banner.php:73 .././widgets/widget_advert.php:54
-msgid "Image URL"
-msgstr "URL de la Imagen"
-
-#: .././shortcodes/shortcode-banner.php:92
-#: .././shortcodes/shortcode-button.php:116
-#: .././shortcodes/shortcode-pricing.php:140
-msgid "Destination URL"
-msgstr ""
-
-#: .././shortcodes/shortcode-button.php:75
-msgid "Button"
-msgstr ""
-
-#: .././shortcodes/shortcode-button.php:76
-msgid "Customizable buttons with icons and colors"
-msgstr ""
-
-#: .././shortcodes/shortcode-button.php:85
-#: .././shortcodes/shortcode-pricing.php:145
-msgid "Button Text"
-msgstr ""
-
-#: .././shortcodes/shortcode-button.php:100
-#: .././shortcodes/shortcode-focus.php:84
-#: .././shortcodes/shortcode-pricing.php:135
+#: .././shortcodes/shortcode-column.php:242
 #, fuzzy
 msgid "Background Color"
 msgstr "Color de Fondo en Páginas"
 
-#: .././shortcodes/shortcode-button.php:105
-#: .././shortcodes/shortcode-focus.php:89
+#: .././shortcodes/shortcode-column.php:249
 #, fuzzy
-msgid "Gradient Color"
+msgid "Background Style"
+msgstr "Textura de Fondo"
+
+#: .././shortcodes/shortcode-column.php:256
+#, fuzzy
+msgid "Text Color"
 msgstr "Color de Cabeceras"
 
-#: .././shortcodes/shortcode-button.php:110
-#: .././shortcodes/shortcode-counter.php:86
-#: .././shortcodes/shortcode-list.php:78
-#: .././shortcodes/shortcode-progress.php:94
-#: .././shortcodes/shortcode-separator.php:88
+#: .././shortcodes/shortcode-column.php:264
 #, fuzzy
-msgid "Color"
-msgstr "Colores"
+msgid "Border Width"
+msgstr "Por Campo de Orden"
 
-#: .././shortcodes/shortcode-button.php:120
+#: .././shortcodes/shortcode-column.php:266
+#: .././shortcodes/shortcode-column.php:274
+msgid "Border"
+msgstr "Borde"
+
+#: .././shortcodes/shortcode-column.php:272
 #, fuzzy
-msgid "Position"
-msgstr "Puesto del Miembro"
+msgid "Border Color"
+msgstr "Color de Cabeceras"
 
-#: .././shortcodes/shortcode-clients.php:50
+#: .././shortcodes/shortcode-column.php:281
 #, fuzzy
-msgid "Client List"
-msgstr "Cliente"
+msgid "Top Padding"
+msgstr "Superior derecha"
 
-#: .././shortcodes/shortcode-clients.php:51
-msgid "Image Grid of Clients"
-msgstr ""
+#: .././shortcodes/shortcode-column.php:283
+#: .././shortcodes/shortcode-column.php:291
+#: .././shortcodes/shortcode-column.php:299
+#: .././shortcodes/shortcode-column.php:307
+msgid "Layout"
+msgstr "Estructura"
 
-#: .././shortcodes/shortcode-clients.php:61
+#: .././shortcodes/shortcode-column.php:289
 #, fuzzy
-msgid "Number of Columns"
-msgstr "Número de Elementos"
+msgid "Right Padding"
+msgstr "Branding del Sitio"
 
-#: .././shortcodes/shortcode-clients.php:66
-#: .././shortcodes/shortcode-slideshow.php:72
+#: .././shortcodes/shortcode-column.php:297
 #, fuzzy
-msgid "Client Images"
-msgstr "Cliente"
+msgid "Bottom Padding"
+msgstr "Inferior derecha"
 
-#: .././shortcodes/shortcode-counter.php:61
+#: .././shortcodes/shortcode-column.php:305
 #, fuzzy
-msgid "Counter"
-msgstr "Centrado"
+msgid "Left Padding"
+msgstr "Cabeceras"
 
-#: .././shortcodes/shortcode-counter.php:62
-msgid "Display numbers with icons and text"
-msgstr ""
+#: .././shortcodes/shortcode-column.php:314
+msgid "Element ID"
+msgstr "ID del Elemento"
 
-#: .././shortcodes/shortcode-counter.php:71
-#, fuzzy
-msgid "Counter Value"
-msgstr "Centrado izquierda"
+#: .././shortcodes/shortcode-column.php:316
+#: .././shortcodes/shortcode-column.php:324
+msgid "Other"
+msgstr "Otro"
 
-#: .././shortcodes/shortcode-definition.php:41
-msgid "Definition"
-msgstr ""
+#: .././shortcodes/shortcode-column.php:322
+msgid "CSS Classes"
+msgstr "Clases CSS"
 
-#: .././shortcodes/shortcode-definition.php:42
-msgid "A definition entry for a term or concept."
-msgstr ""
-
-#: .././shortcodes/shortcode-feature.php:57
-#, fuzzy
-msgid "Inline Feature"
-msgstr "Mini Elemento"
-
-#: .././shortcodes/shortcode-feature.php:58
-msgid "A block of text with title and icon"
-msgstr ""
-
-#: .././shortcodes/shortcode-feature.php:67
-#, fuzzy
-msgid "Feature Title"
-msgstr "Tipo de Elemento"
-
-#: .././shortcodes/shortcode-feature.php:73
-#, fuzzy
-msgid "Feature Content"
-msgstr "Icono del Elemento"
-
-#: .././shortcodes/shortcode-feature.php:79
-#: .././shortcodes/shortcode-focus.php:79
-#: .././shortcodes/shortcode-pricing.php:130
-#: .././shortcodes/shortcode-separator.php:78
-#: .././shortcodes/shortcode-testimonial.php:85
-#, fuzzy
-msgid "Style"
-msgstr "Estilizado"
-
-#: .././shortcodes/shortcode-feature.php:89
-#, fuzzy
-msgid "Icon Color"
-msgstr "Color Secundario"
-
-#: .././shortcodes/shortcode-focus.php:64
-msgid "Focus Box"
-msgstr ""
-
-#: .././shortcodes/shortcode-focus.php:65
-msgid "Highlight a small content area"
-msgstr ""
-
-#: .././shortcodes/shortcode-focus.php:94
-msgid "Color Scheme"
-msgstr ""
-
-#: .././shortcodes/shortcode-list.php:58
-#, fuzzy
-msgid "Custom List"
-msgstr "Título Personalizado"
-
-#: .././shortcodes/shortcode-list.php:59
-msgid "A list with custom colors and icons"
-msgstr ""
-
-#: .././shortcodes/shortcode-list.php:83
-#: .././shortcodes/shortcode-posts.php:130
-#, fuzzy
-msgid "List Style"
-msgstr "Estilo"
-
-#: .././shortcodes/shortcode-message.php:31
-msgid "Message"
-msgstr "Mensaje"
-
-#: .././shortcodes/shortcode-message.php:32
-msgid "Notifications and alert messages"
-msgstr ""
-
-#: .././shortcodes/shortcode-message.php:46
-#, fuzzy
-msgid "Message Type"
-msgstr "Mensaje"
-
-#: .././shortcodes/shortcode-posts.php:91
+#: .././shortcodes/shortcode-posts.php:93
 #, fuzzy
 msgid "By"
 msgstr "Cuerpo"
 
-#: .././shortcodes/shortcode-posts.php:120
+#~ msgid "Accordion"
+#~ msgstr "Acordeón"
+
+#~ msgid "An animated accordion with icons"
+#~ msgstr "Un acordeón animado con iconos"
+
+#~ msgid "Content"
+#~ msgstr "Contenidos"
+
+#~ msgid "Title"
+#~ msgstr "T&iacute;tulo"
+
+#~ msgid "Accordion Title"
+#~ msgstr "Título Del Acordeón"
+
 #, fuzzy
-msgid "Post List"
-msgstr "Etiquetas"
+#~ msgid "Contents"
+#~ msgstr "Contenidos"
 
-#: .././shortcodes/shortcode-posts.php:121
-msgid "Create a grid of posts in various styles"
-msgstr ""
+#~ msgid "Icon"
+#~ msgstr "Icono"
 
-#: .././shortcodes/shortcode-posts.php:135
+#~ msgid "Size"
+#~ msgstr "Tamaño"
+
+#~ msgid "Entrance Animation"
+#~ msgstr "Animación De Entrada"
+
+#~ msgid "Banner"
+#~ msgstr "Banner"
+
 #, fuzzy
-msgid "List Columns"
-msgstr "Columnas del Portafolio"
+#~ msgid "Images"
+#~ msgstr "P&aacute;ginas"
 
-#: .././shortcodes/shortcode-posts.php:140
+#~ msgid "Image URL"
+#~ msgstr "URL de la Imagen"
+
 #, fuzzy
-msgid "Post Type"
-msgstr "Etiquetas"
+#~ msgid "Color"
+#~ msgstr "Colores"
 
-#: .././shortcodes/shortcode-posts.php:145
-msgid "Order Posts By"
-msgstr ""
-
-#: .././shortcodes/shortcode-posts.php:150
 #, fuzzy
-msgid "Order Direction"
-msgstr "Ordenación"
+#~ msgid "Position"
+#~ msgstr "Puesto del Miembro"
 
-#: .././shortcodes/shortcode-posts.php:155
-#: .././widgets/widget_recentitems.php:81
-#: .././widgets/widget_recentposts.php:80
-msgid "Number of Posts"
-msgstr "Número de Entradas"
-
-#: .././shortcodes/shortcode-posts.php:160
-msgid "Thumbnail Image Size"
-msgstr ""
-
-#: .././shortcodes/shortcode-posts.php:165
 #, fuzzy
-msgid "Post Author"
-msgstr "¿Mostrar Autores?"
+#~ msgid "Client List"
+#~ msgstr "Cliente"
 
-#: .././shortcodes/shortcode-posts.php:170
 #, fuzzy
-msgid "Post Date"
-msgstr "Categorías"
+#~ msgid "Number of Columns"
+#~ msgstr "Número de Elementos"
 
-#: .././shortcodes/shortcode-pricing.php:85
-msgid "Pricing Item"
-msgstr ""
-
-#: .././shortcodes/shortcode-pricing.php:86
-msgid "A single pricing item"
-msgstr ""
-
-#: .././shortcodes/shortcode-pricing.php:100
 #, fuzzy
-msgid "Subtitle"
-msgstr "T&iacute;tulo"
+#~ msgid "Client Images"
+#~ msgstr "Cliente"
 
-#: .././shortcodes/shortcode-pricing.php:105
 #, fuzzy
-msgid "Price Description"
-msgstr "Descripción por Defecto"
+#~ msgid "Counter"
+#~ msgstr "Centrado"
 
-#: .././shortcodes/shortcode-pricing.php:110
-msgid "Price"
-msgstr ""
-
-#: .././shortcodes/shortcode-pricing.php:115
-msgid "Price Prefix"
-msgstr ""
-
-#: .././shortcodes/shortcode-pricing.php:120
-msgid "Price Suffix"
-msgstr ""
-
-#: .././shortcodes/shortcode-pricing.php:150
 #, fuzzy
-msgid "Button Color"
-msgstr "Color del Cuerpo"
+#~ msgid "Counter Value"
+#~ msgstr "Centrado izquierda"
 
-#: .././shortcodes/shortcode-progress.php:64
-msgid "Progress Bar"
-msgstr ""
-
-#: .././shortcodes/shortcode-progress.php:65
-msgid "Animated progress bars of various sizes"
-msgstr ""
-
-#: .././shortcodes/shortcode-progress.php:79
-msgid "Value"
-msgstr ""
-
-#: .././shortcodes/shortcode-separator.php:63
 #, fuzzy
-msgid "Separator"
-msgstr "Separador del T&iacute;tulo"
+#~ msgid "Inline Feature"
+#~ msgstr "Mini Elemento"
 
-#: .././shortcodes/shortcode-separator.php:64
-msgid "A separator line with icons and return link"
-msgstr ""
-
-#: .././shortcodes/shortcode-separator.php:68
-msgid "Layout"
-msgstr "Estructura"
-
-#: .././shortcodes/shortcode-separator.php:83
-msgid "Back To Top Text"
-msgstr ""
-
-#: .././shortcodes/shortcode-slideshow.php:62
 #, fuzzy
-msgid "Slideshow"
-msgstr "Diapositivas"
+#~ msgid "Feature Title"
+#~ msgstr "Tipo de Elemento"
 
-#: .././shortcodes/shortcode-slideshow.php:63
 #, fuzzy
-msgid "A slideshow of images"
-msgstr "Muestra un pase de diapositivas de todas las imágenes adjuntas"
+#~ msgid "Feature Content"
+#~ msgstr "Icono del Elemento"
 
-#: .././shortcodes/shortcode-slideshow.php:77
-msgid "Time Between Transitions"
-msgstr ""
-
-#: .././shortcodes/shortcode-slideshow.php:82
-msgid "Transition Speed"
-msgstr ""
-
-#: .././shortcodes/shortcode-slideshow.php:87
-msgid "Transition Effect"
-msgstr ""
-
-#: .././shortcodes/shortcode-slideshow.php:92
 #, fuzzy
-msgid "Slide Pagination"
-msgstr "Opciones de Diapositiva"
+#~ msgid "Style"
+#~ msgstr "Estilizado"
 
-#: .././shortcodes/shortcode-slideshow.php:97
 #, fuzzy
-msgid "Prev/Next Navigation"
-msgstr "Navegación"
+#~ msgid "Icon Color"
+#~ msgstr "Color Secundario"
 
-#: .././shortcodes/shortcode-team.php:67
-msgid "Team Member"
-msgstr "Miembro del Equipo"
-
-#: .././shortcodes/shortcode-team.php:68
 #, fuzzy
-msgid "Display the profile of a team member"
-msgstr "Especifica el rol de este miembro del equipo."
+#~ msgid "Custom List"
+#~ msgstr "Título Personalizado"
 
-#: .././shortcodes/shortcode-team.php:77
-#: .././shortcodes/shortcode-testimonial.php:65
-msgid "Name"
-msgstr "Nombre"
-
-#: .././shortcodes/shortcode-team.php:87
-#: .././shortcodes/shortcode-testimonial.php:75
 #, fuzzy
-msgid "Image"
-msgstr "URL de la Imagen"
+#~ msgid "List Style"
+#~ msgstr "Estilo"
 
-#: .././shortcodes/shortcode-team.php:97
+#~ msgid "Message"
+#~ msgstr "Mensaje"
+
 #, fuzzy
-msgid "Web Page"
-msgstr "Página de Facebook"
+#~ msgid "Message Type"
+#~ msgstr "Mensaje"
 
-#: .././shortcodes/shortcode-team.php:102 .././widgets/widget_social.php:144
-msgid "Facebook Page"
-msgstr "Página de Facebook"
-
-#: .././shortcodes/shortcode-team.php:107 .././widgets/widget_social.php:148
-msgid "Twitter Page"
-msgstr "Página de Twitter"
-
-#: .././shortcodes/shortcode-team.php:112 .././widgets/widget_social.php:152
-msgid "Google Plus Page"
-msgstr "Página de Google Plus"
-
-#: .././shortcodes/shortcode-team.php:117 .././widgets/widget_social.php:156
-msgid "LinkedIn Page"
-msgstr "Página de LinkedIn"
-
-#: .././shortcodes/shortcode-team.php:122 .././widgets/widget_social.php:172
-msgid "Pinterest Page"
-msgstr "Página de Pinterest"
-
-#: .././shortcodes/shortcode-team.php:127 .././widgets/widget_social.php:164
-msgid "Tumblr Page"
-msgstr "Página de Tumblr"
-
-#: .././shortcodes/shortcode-testimonial.php:55
 #, fuzzy
-msgid "Testimonial"
-msgstr "Testimonios"
+#~ msgid "Post List"
+#~ msgstr "Etiquetas"
 
-#: .././shortcodes/shortcode-testimonial.php:56
-msgid "A quoted message for improving credibility"
-msgstr ""
-
-#: .././widgets/widget_advert.php:7 .././widgets/widget_social.php:7
-msgid "This widget lets you display an advertising banner of any size."
-msgstr ""
-"Este widget te permite mostrar un banner de publicidad de cualquier tamaño."
-
-#: .././widgets/widget_advert.php:8
-msgid "Ad Space"
-msgstr "Banner Publicitario"
-
-#: .././widgets/widget_advert.php:58
-msgid "Link URL"
-msgstr "URL del Enlace"
-
-#: .././widgets/widget_advert.php:61
-msgid "or"
-msgstr "o"
-
-#: .././widgets/widget_advert.php:63
-msgid "Advertising Code"
-msgstr "Código Publicitario"
-
-#: .././widgets/widget_advert.php:66
-msgid ""
-"You can add an image linked to a specific URL, or alternatively paste your "
-"advertising code."
-msgstr ""
-"Puedes añadir una imagen enlazada a una URL especícifa, o alternativamente "
-"pegar tu código publicitario."
-
-#: .././widgets/widget_flickr.php:7
-msgid "Displays a stream of photos from Flickr."
-msgstr "Muestra una serie de fotos proveniente de Flickr."
-
-#: .././widgets/widget_flickr.php:8
-msgid "Flickr Stream"
-msgstr "Fotos de Flickr"
-
-#: .././widgets/widget_flickr.php:48
-msgid "User ID"
-msgstr "ID de Usuario"
-
-#: .././widgets/widget_flickr.php:53
-msgid "Number of Photos"
-msgstr "Número de Fotos"
-
-#: .././widgets/widget_portfolio.php:7
-msgid "Displays elements from the portfolio."
-msgstr "Muestra elementos del portafolio."
-
-#: .././widgets/widget_portfolio.php:8
 #, fuzzy
-msgid "Portfolio Items"
-msgstr "Añadir Portafolio"
+#~ msgid "List Columns"
+#~ msgstr "Columnas del Portafolio"
 
-#: .././widgets/widget_portfolio.php:80
-msgid "Number of Items"
-msgstr "Número de Elementos"
-
-#: .././widgets/widget_portfolio.php:85
-msgid "Ordering"
-msgstr "Ordenación"
-
-#: .././widgets/widget_portfolio.php:86
-msgid "By Order Field"
-msgstr "Por Campo de Orden"
-
-#: .././widgets/widget_portfolio.php:87
-msgid "By Date"
-msgstr "Por Fecha"
-
-#: .././widgets/widget_portfolio.php:88
-msgid "By Title"
-msgstr "Por Título"
-
-#: .././widgets/widget_recentitems.php:7
-msgid "Displays the most recent items of your choice."
-msgstr "Muestra las entradas más recientes de tu elección."
-
-#: .././widgets/widget_recentitems.php:8
-msgid "Recent Items"
-msgstr "Entradas Recientes"
-
-#: .././widgets/widget_recentitems.php:77
-msgid "Type of Post"
-msgstr "Tipo de Entrada"
-
-#: .././widgets/widget_recentposts.php:7
-msgid "Displays the most recent posts with date and thumbnail."
-msgstr "Muestra las entradas más recientes con fecha y miniatura."
-
-#: .././widgets/widget_recentposts.php:8
-msgid "Recent Posts"
-msgstr "Entradas Recientes"
-
-#: .././widgets/widget_social.php:8
-msgid "Social Links"
-msgstr "Perfiles Sociales"
-
-#: .././widgets/widget_social.php:140
-msgid "RSS URL"
-msgstr ""
-
-#: .././widgets/widget_social.php:160
-msgid "YouTube Page"
-msgstr "Página de YouTube"
-
-#: .././widgets/widget_social.php:168
-msgid "Skype Page"
-msgstr "Página de Skype"
-
-#: .././widgets/widget_social.php:176
-msgid "Instagram Page"
-msgstr "Página de Instagram"
-
-#: .././widgets/widget_social.php:180
-msgid "Dribbble Page"
-msgstr "Página de Dribbble"
-
-#: .././widgets/widget_subscribers.php:7
-msgid "Displays the subscriber count of your social networks."
-msgstr "Muestra el número de suscriptores de tus redes sociales."
-
-#: .././widgets/widget_subscribers.php:8
 #, fuzzy
-msgid "Subscriber Count"
-msgstr "CPO - Contador de Suscriptores"
+#~ msgid "Post Type"
+#~ msgstr "Etiquetas"
 
-#: .././widgets/widget_subscribers.php:28
-msgid "Fans"
-msgstr "Fans"
+#, fuzzy
+#~ msgid "Order Direction"
+#~ msgstr "Ordenación"
 
-#: .././widgets/widget_subscribers.php:52
-msgid "Facebook Page Title or ID"
-msgstr "Título de Página o ID de Facebook"
+#~ msgid "Number of Posts"
+#~ msgstr "Número de Entradas"
 
-#: .././widgets/widget_tweets.php:7
-msgid "Displays the latest tweets for a specific Twitter user."
-msgstr "Muestra los últimos tweets de un usuario de Twitter."
+#, fuzzy
+#~ msgid "Post Author"
+#~ msgstr "¿Mostrar Autores?"
 
-#: .././widgets/widget_tweets.php:8
-msgid "Twitter Stream"
-msgstr "Stream de Twitter"
+#, fuzzy
+#~ msgid "Post Date"
+#~ msgstr "Categorías"
 
-#: .././widgets/widget_tweets.php:118
-msgid "Twitter Username"
-msgstr "Usuario de Twitter"
+#, fuzzy
+#~ msgid "Subtitle"
+#~ msgstr "T&iacute;tulo"
 
-#: .././widgets/widget_tweets.php:122
-msgid "Number of Tweets"
-msgstr "N&uacute;mero de Tweets"
+#, fuzzy
+#~ msgid "Price Description"
+#~ msgstr "Descripción por Defecto"
 
-#: .././widgets/widget_tweets.php:125
-msgid "API Settings"
-msgstr "Opciones de la API"
+#, fuzzy
+#~ msgid "Button Color"
+#~ msgstr "Color del Cuerpo"
 
-#: .././widgets/widget_tweets.php:127
-msgid "Consumer Key"
-msgstr "Clave de Consumidor"
+#, fuzzy
+#~ msgid "Separator"
+#~ msgstr "Separador del T&iacute;tulo"
 
-#: .././widgets/widget_tweets.php:131
-msgid "Consumer Secret"
-msgstr "Secreto de Consumidor"
+#, fuzzy
+#~ msgid "Slideshow"
+#~ msgstr "Diapositivas"
 
-#: .././widgets/widget_tweets.php:135
-msgid "Access Key"
-msgstr "Clave de Acceso"
+#, fuzzy
+#~ msgid "A slideshow of images"
+#~ msgstr "Muestra un pase de diapositivas de todas las imágenes adjuntas"
 
-#: .././widgets/widget_tweets.php:139
-msgid "Access Secret"
-msgstr "Secreto de Acceso"
+#, fuzzy
+#~ msgid "Slide Pagination"
+#~ msgstr "Opciones de Diapositiva"
+
+#, fuzzy
+#~ msgid "Prev/Next Navigation"
+#~ msgstr "Navegación"
+
+#~ msgid "Team Member"
+#~ msgstr "Miembro del Equipo"
+
+#, fuzzy
+#~ msgid "Display the profile of a team member"
+#~ msgstr "Especifica el rol de este miembro del equipo."
+
+#~ msgid "Name"
+#~ msgstr "Nombre"
+
+#, fuzzy
+#~ msgid "Image"
+#~ msgstr "URL de la Imagen"
+
+#, fuzzy
+#~ msgid "Web Page"
+#~ msgstr "Página de Facebook"
+
+#~ msgid "Facebook Page"
+#~ msgstr "Página de Facebook"
+
+#~ msgid "Twitter Page"
+#~ msgstr "Página de Twitter"
+
+#~ msgid "Google Plus Page"
+#~ msgstr "Página de Google Plus"
+
+#~ msgid "LinkedIn Page"
+#~ msgstr "Página de LinkedIn"
+
+#~ msgid "Pinterest Page"
+#~ msgstr "Página de Pinterest"
+
+#~ msgid "Tumblr Page"
+#~ msgstr "Página de Tumblr"
+
+#, fuzzy
+#~ msgid "Testimonial"
+#~ msgstr "Testimonios"
+
+#~ msgid "This widget lets you display an advertising banner of any size."
+#~ msgstr ""
+#~ "Este widget te permite mostrar un banner de publicidad de cualquier "
+#~ "tamaño."
+
+#~ msgid "Ad Space"
+#~ msgstr "Banner Publicitario"
+
+#~ msgid "Link URL"
+#~ msgstr "URL del Enlace"
+
+#~ msgid "or"
+#~ msgstr "o"
+
+#~ msgid "Advertising Code"
+#~ msgstr "Código Publicitario"
+
+#~ msgid ""
+#~ "You can add an image linked to a specific URL, or alternatively paste "
+#~ "your advertising code."
+#~ msgstr ""
+#~ "Puedes añadir una imagen enlazada a una URL especícifa, o "
+#~ "alternativamente pegar tu código publicitario."
+
+#~ msgid "Displays a stream of photos from Flickr."
+#~ msgstr "Muestra una serie de fotos proveniente de Flickr."
+
+#~ msgid "Flickr Stream"
+#~ msgstr "Fotos de Flickr"
+
+#~ msgid "User ID"
+#~ msgstr "ID de Usuario"
+
+#~ msgid "Number of Photos"
+#~ msgstr "Número de Fotos"
+
+#~ msgid "Displays elements from the portfolio."
+#~ msgstr "Muestra elementos del portafolio."
+
+#, fuzzy
+#~ msgid "Portfolio Items"
+#~ msgstr "Añadir Portafolio"
+
+#~ msgid "Number of Items"
+#~ msgstr "Número de Elementos"
+
+#~ msgid "Ordering"
+#~ msgstr "Ordenación"
+
+#~ msgid "By Date"
+#~ msgstr "Por Fecha"
+
+#~ msgid "By Title"
+#~ msgstr "Por Título"
+
+#~ msgid "Displays the most recent items of your choice."
+#~ msgstr "Muestra las entradas más recientes de tu elección."
+
+#~ msgid "Recent Items"
+#~ msgstr "Entradas Recientes"
+
+#~ msgid "Type of Post"
+#~ msgstr "Tipo de Entrada"
+
+#~ msgid "Displays the most recent posts with date and thumbnail."
+#~ msgstr "Muestra las entradas más recientes con fecha y miniatura."
+
+#~ msgid "Recent Posts"
+#~ msgstr "Entradas Recientes"
+
+#~ msgid "Social Links"
+#~ msgstr "Perfiles Sociales"
+
+#~ msgid "YouTube Page"
+#~ msgstr "Página de YouTube"
+
+#~ msgid "Skype Page"
+#~ msgstr "Página de Skype"
+
+#~ msgid "Instagram Page"
+#~ msgstr "Página de Instagram"
+
+#~ msgid "Dribbble Page"
+#~ msgstr "Página de Dribbble"
+
+#~ msgid "Displays the subscriber count of your social networks."
+#~ msgstr "Muestra el número de suscriptores de tus redes sociales."
+
+#, fuzzy
+#~ msgid "Subscriber Count"
+#~ msgstr "CPO - Contador de Suscriptores"
+
+#~ msgid "Fans"
+#~ msgstr "Fans"
+
+#~ msgid "Facebook Page Title or ID"
+#~ msgstr "Título de Página o ID de Facebook"
+
+#~ msgid "Displays the latest tweets for a specific Twitter user."
+#~ msgstr "Muestra los últimos tweets de un usuario de Twitter."
+
+#~ msgid "Twitter Stream"
+#~ msgstr "Stream de Twitter"
+
+#~ msgid "Twitter Username"
+#~ msgstr "Usuario de Twitter"
+
+#~ msgid "Number of Tweets"
+#~ msgstr "N&uacute;mero de Tweets"
+
+#~ msgid "API Settings"
+#~ msgstr "Opciones de la API"
+
+#~ msgid "Consumer Key"
+#~ msgstr "Clave de Consumidor"
+
+#~ msgid "Consumer Secret"
+#~ msgstr "Secreto de Consumidor"
+
+#~ msgid "Access Key"
+#~ msgstr "Clave de Acceso"
+
+#~ msgid "Access Secret"
+#~ msgstr "Secreto de Acceso"
 
 #~ msgid "Page Not Found"
 #~ msgstr "Página No Encontrada"
@@ -758,8 +553,7 @@ msgstr "Secreto de Acceso"
 #~ msgid "Related Projects"
 #~ msgstr "Proyectos Relacionados"
 
-#~ msgid ""
-#~ "Theme designed by <a href=\"http://www.ctscs.com\">ctscs</a>."
+#~ msgid "Theme designed by <a href=\"http://www.ctscs.com\">ctscs</a>."
 #~ msgstr "Tema creado por <a href=\"http://www.ctscs.com\">ctscs</a>."
 
 #~ msgid "Search"
@@ -1097,9 +891,6 @@ msgstr "Secreto de Acceso"
 
 #~ msgid "General Styling"
 #~ msgstr "Estilizado General"
-
-#~ msgid "Background Texture"
-#~ msgstr "Textura de Fondo"
 
 #~ msgid "Specifies a texture to be used in the background of the site."
 #~ msgstr ""
@@ -1625,9 +1416,6 @@ msgstr "Secreto de Acceso"
 #~ msgid "Top center"
 #~ msgstr "Superior centrado"
 
-#~ msgid "Top right"
-#~ msgstr "Superior derecha"
-
 #~ msgid "Centered right"
 #~ msgstr "Centrado derecha"
 
@@ -1636,9 +1424,6 @@ msgstr "Secreto de Acceso"
 
 #~ msgid "Bottom centered"
 #~ msgstr "Inferior centrado"
-
-#~ msgid "Bottom right"
-#~ msgstr "Inferior derecha"
 
 #~ msgid "Both"
 #~ msgstr "Ambos"
@@ -1753,36 +1538,6 @@ msgstr "Secreto de Acceso"
 #~ "Configura las opciones de tipografías y colores utilizadas en el "
 #~ "contenido."
 
-#~ msgid "Headings"
-#~ msgstr "Cabeceras"
-
-#~ msgid "Theme Options"
-#~ msgstr "Opciones del Tema"
-
-#~ msgid "Changes have been saved."
-#~ msgstr "Las opciones de configuraci&oacute;n han sido guardadas."
-
-#~ msgid "Changes could not be saved."
-#~ msgstr "Las opciones de configuraci&oacute;n no han podido ser guardadas."
-
-#~ msgid "Save Settings"
-#~ msgstr "Guardar"
-
-#~ msgid "default"
-#~ msgstr "por defecto"
-
-#~ msgid "Yes"
-#~ msgstr "S&iacute;"
-
-#~ msgid "No"
-#~ msgstr "No"
-
-#~ msgid "Upload"
-#~ msgstr "Subir"
-
-#~ msgid "This is a font preview"
-#~ msgstr "Esta es una previsualización"
-
 #~ msgid "Page %s"
 #~ msgstr "P&aacute;gina %s"
 
@@ -1893,9 +1648,6 @@ msgstr "Secreto de Acceso"
 #~ msgstr ""
 #~ "Crea una etiqueta de palabras clave específica para esta entrada/página. "
 #~ "Las palabras clave deben ir separadas por comas."
-
-#~ msgid "Site Branding"
-#~ msgstr "Branding del Sitio"
 
 #~ msgid "Custom Logo"
 #~ msgstr "Logo Personalizado"
@@ -2137,9 +1889,6 @@ msgstr "Secreto de Acceso"
 #~ msgid "Determines the color of the background."
 #~ msgstr "Determines the color of the background."
 
-#~ msgid "Background Image"
-#~ msgstr "Imagen de Fondo"
-
 #~ msgid "Insert the URL of an image to be used as a custom background."
 #~ msgstr ""
 #~ "Inserta la URL de una imagen para que sea utilizada como fondo "
@@ -2192,9 +1941,6 @@ msgstr "Secreto de Acceso"
 
 #~ msgid "Pages:"
 #~ msgstr "P&aacute;ginas:"
-
-#~ msgid "Support"
-#~ msgstr "Soporte"
 
 #~ msgid "Taglines"
 #~ msgstr "Lemas"
@@ -2289,9 +2035,6 @@ msgstr "Secreto de Acceso"
 #~ msgstr ""
 #~ "Muestra una frase corta o lema debajo del pase de diapositivas en la "
 #~ "página de inicio. Puedes utilizar HTML para estilizar tu frase,"
-
-#~ msgid "Theme Settings"
-#~ msgstr "Configuraci&oacute;n"
 
 #~ msgid "Posted on %1$s"
 #~ msgstr "Escrito en %1$s "

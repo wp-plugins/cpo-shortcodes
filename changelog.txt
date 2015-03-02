@@ -1,3 +1,6 @@
+= 1.2.1 =
+* Fixed the icon generator not displaying properly.
+
 = 1.2.0 =
 * The plugin has been completely revamped with many new features.
 * Buttons now have background colors, gradients, icons and borders.

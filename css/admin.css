@@ -6,6 +6,8 @@
 1. PLUGIN SETTINGS PAGE
 -------------------------------------------------------------- */
 
+i.ctsc-shortcodes-icon { background-image: url('../images/icon-shortcodes.png'); }
+
 /* HEADER */
 .ctsc-header { display:block; overflow:hidden; padding:0; margin:30px 0; }
 .ctsc-header-title { font-family:'Open Sans', Arial, sans-serif; font-size:30px; margin:0 0 20px; font-weight:bold; }
