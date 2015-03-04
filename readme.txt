@@ -11,7 +11,7 @@ Add all sorts of multimedia elements to your pages with this shortcode pack, com
 
 == Description ==
 
-* The 1.2.0 update added a new shortcode prefix that can be configured in Settings > CPO Shortcodes, to avoid conflicts with other plugins. If you used this plugin prior to version 1.2.0, you will have to leave the prefix empty to keep all shortcodes working. Should you need to download the 1.1.0 version, you can find it here:*
+** The 1.2.0 update added a new shortcode prefix that can be configured in Settings > CPO Shortcodes, to avoid conflicts with other plugins. If you used this plugin prior to version 1.2.0, you will have to leave the prefix empty to keep all shortcodes working. Should you need to download the 1.1.0 version, you can find it here:**
 [Download CPO Shortcodes 1.1.0](http://cpothemes.com/cpo-shortcodes-1.1.0.zip)
 
 [CPO Shortcodes](http://cpothemes.com/plugin/cpo-shortcodes) is a complete shortcode pack that gives you extreme flexibility for designing high-quality content.
