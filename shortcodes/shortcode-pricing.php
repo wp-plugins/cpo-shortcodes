@@ -1,8 +1,8 @@
 <?php 
 
 /* Pricing Item Shortcode */
-if(!function_exists('ctsc_shortcode_pricing_column')){
-	function ctsc_shortcode_pricing_column($atts, $content = null){
+if(!function_exists('ctsc_shortcode_pricing')){
+	function ctsc_shortcode_pricing($atts, $content = null){
 		$attributes = extract(shortcode_atts(array(
 		'type' => 'none',
 		'title' => '',
@@ -73,5 +73,6 @@ if(!function_exists('ctsc_shortcode_pricing_column')){
 		$output .= '</div>';
 		return $output;
 	}
-	add_shortcode(ctsc_shortcode_prefix().'pricing', 'ctsc_shortcode_pricing_column');
+	add_shortcode(ctsc_shortcode_prefix().'pricing', 'ctsc_shortcode_pricing');
+	add_shortcode(ctsc_shortcode_prefix().'pricing_item', 'ctsc_shortcode_pricing');
 }

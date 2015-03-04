@@ -3,7 +3,7 @@ Contributors: cpothemes
 Tags: button, counter, message, shortcode, share, gallery, slideshow, accordion, toggle, content, short code, tooltip, jquery, spoiler, links, list, custom, leading, notice, icon, touch, icons, team, testimonial, bar, progress, feed, portfolio, shortcodes, map, google map, animation, css3, transition, pricing, pricing table
 Requires at least: 3.9
 Tested up to: 4.1.0
-Stable tag: 1.2.1
+Stable tag: 1.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -82,6 +82,13 @@ CPO Shortcodes also includes an number of more advanced shortcodes that let you 
 5. Add custom-colored pricing tables to your pages
 
 == Changelog ==
+
+= 1.2.2 =
+* Fixed the section shortcode not being included.
+* Added missing shortcodes to the visual editor generator.
+* Added a new shortcode: mailchimp optin form.
+* Added a new shortcode: animation area.
+* Added a new shortcode: clearing div.
 
 = 1.2.1 =
 * Fixed the icon generator not displaying properly.

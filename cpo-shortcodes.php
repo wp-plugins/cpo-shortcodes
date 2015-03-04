@@ -3,7 +3,7 @@
 Plugin Name: CPO Shortcodes
 Description: Lets you use over 30 different shortcodes to create incredible, rich-media pages. You can easily insert them using a shortcode generator added to the WordPress visual editor toolbar.
 Author: CPOThemes
-Version: 1.2.1
+Version: 1.2.2
 Author URI: http://www.cpothemes.com
 */
 
@@ -131,7 +131,9 @@ require_once($core_path.'metadata/metadata-general.php');
 require_once($core_path.'metadata/metadata-settings.php');
 //Shortcodes
 require_once($core_path.'shortcodes/shortcode-accordion.php');
+require_once($core_path.'shortcodes/shortcode-animation.php');
 require_once($core_path.'shortcodes/shortcode-button.php');
+require_once($core_path.'shortcodes/shortcode-clear.php');
 require_once($core_path.'shortcodes/shortcode-column.php');
 require_once($core_path.'shortcodes/shortcode-counter.php');
 require_once($core_path.'shortcodes/shortcode-dropcap.php');
@@ -141,10 +143,12 @@ require_once($core_path.'shortcodes/shortcode-leading.php');
 require_once($core_path.'shortcodes/shortcode-list.php');
 require_once($core_path.'shortcodes/shortcode-map.php');
 require_once($core_path.'shortcodes/shortcode-message.php');
+require_once($core_path.'shortcodes/shortcode-optin.php');
 require_once($core_path.'shortcodes/shortcode-posts.php');
 require_once($core_path.'shortcodes/shortcode-pricing.php');
 require_once($core_path.'shortcodes/shortcode-progress.php');
 require_once($core_path.'shortcodes/shortcode-separator.php');
+require_once($core_path.'shortcodes/shortcode-section.php');
 require_once($core_path.'shortcodes/shortcode-slideshow.php');
 require_once($core_path.'shortcodes/shortcode-spacer.php');
 require_once($core_path.'shortcodes/shortcode-tabs.php');

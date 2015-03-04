@@ -39,6 +39,7 @@
 						{ text: 'Slideshow', onclick: function(){ editor.selection.setContent('[' + ctsc_vars.prefix + 'slideshow][' + ctsc_vars.prefix + 'slide]' + editor.selection.getContent() + '[/' + ctsc_vars.prefix + 'slide][/' + ctsc_vars.prefix + 'slideshow]'); } },
 						{ text: 'Map', onclick: function(){ editor.selection.setContent('[' + ctsc_vars.prefix + 'map latitude="" longitude="" color="" height="400"]'); } },
 						{ text: 'Pricing Table', onclick: function(){ editor.selection.setContent('[' + ctsc_vars.prefix + 'pricing title="Product" subtitle="Subtitle" description="One Time Fee" price="99" before="$" after="" color="gray" type="highlight"]' + editor.selection.getContent() + '[/' + ctsc_vars.prefix + 'pricing]'); } },
+						{ text: 'Mailchimp Optin Form', onclick: function(){ editor.selection.setContent('[' + ctsc_vars.prefix + 'optin url="MAILCHIMPURL" captcha="MAILCHIMPCAPTCHA" email="Your Email" firstname="First Name" lastname="Last Name" submit="Subscribe" style="vertical"]'); } },
 					]
 				},
 				{
@@ -61,11 +62,15 @@
 				{
 					text: 'Layout',
 					menu: [			
+						{ text: 'Section', onclick: function(){ editor.selection.setContent('[' + ctsc_vars.prefix + 'section title="Section Title" subtitle="Section Subtitle" background="#f3f3f3" gradient="#eeeeee"]' + editor.selection.getContent() + '[/' + ctsc_vars.prefix + 'section]'); } },
 						{ text: 'Two Columns', onclick: function(){ editor.selection.setContent('[' + ctsc_vars.prefix + 'column_half]<br><br>Column<br><br>[/' + ctsc_vars.prefix + 'column_half][' + ctsc_vars.prefix + 'column_half_last]<br><br>Column<br><br>[/' + ctsc_vars.prefix + 'column_half_last]'); } },
 						{ text: 'Three Columns', onclick: function(){ editor.selection.setContent('[' + ctsc_vars.prefix + 'column_third]<br><br>Column<br><br>[/' + ctsc_vars.prefix + 'column_third][' + ctsc_vars.prefix + 'column_third]<br><br>Column<br><br>[/' + ctsc_vars.prefix + 'column_third][' + ctsc_vars.prefix + 'column_third_last]<br><br>Column<br><br>[/' + ctsc_vars.prefix + 'column_third_last]'); } },
 						{ text: 'Four Columns', onclick: function(){ editor.selection.setContent('[' + ctsc_vars.prefix + 'column_fourth]<br><br>Column<br><br>[/' + ctsc_vars.prefix + 'column_fourth][' + ctsc_vars.prefix + 'column_fourth]<br><br>Column<br><br>[/' + ctsc_vars.prefix + 'column_fourth][' + ctsc_vars.prefix + 'column_fourth]<br><br>Column<br><br>[/' + ctsc_vars.prefix + 'column_fourth][' + ctsc_vars.prefix + 'column_fourth_last]<br><br>Column<br><br>[/' + ctsc_vars.prefix + 'column_fourth_last]'); } },
 						{ text: 'Five Columns', onclick: function(){ editor.selection.setContent('[' + ctsc_vars.prefix + 'column_fifth]<br><br>Column<br><br>[/' + ctsc_vars.prefix + 'column_fifth][' + ctsc_vars.prefix + 'column_fifth]<br><br>Column<br><br>[/' + ctsc_vars.prefix + 'column_fifth][' + ctsc_vars.prefix + 'column_fifth]<br><br>Column<br><br>[/' + ctsc_vars.prefix + 'column_fifth][' + ctsc_vars.prefix + 'column_fifth]<br><br>Column<br><br>[/' + ctsc_vars.prefix + 'column_fifth][' + ctsc_vars.prefix + 'column_fifth_last]<br><br>Column<br><br>[/' + ctsc_vars.prefix + 'column_fifth_last]'); } },
 						{ text: 'Separator', onclick: function(){ editor.selection.setContent('[' + ctsc_vars.prefix + 'separator type="top"]' + editor.selection.getContent() + '[/' + ctsc_vars.prefix + 'separator]'); } },
+						{ text: 'Animation Effect', onclick: function(){ editor.selection.setContent('[' + ctsc_vars.prefix + 'animation animation="slideup" delay="1000"]' + editor.selection.getContent() + '[/' + ctsc_vars.prefix + 'animation]'); } },
+						{ text: 'Spacer', onclick: function(){ editor.selection.setContent('[' + ctsc_vars.prefix + 'spacer height="30"]'); } },
+						{ text: 'Clearing DIV', onclick: function(){ editor.selection.setContent('[' + ctsc_vars.prefix + 'clear]'); } },
 					]
 				}
 

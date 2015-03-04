@@ -1,3 +1,10 @@
+= 1.2.2 =
+* Fixed the section shortcode not being included.
+* Added missing shortcodes to the visual editor generator.
+* Added a new shortcode: mailchimp optin form.
+* Added a new shortcode: animation area.
+* Added a new shortcode: clearing div.
+
 = 1.2.1 =
 * Fixed the icon generator not displaying properly.
 
