@@ -1,45 +1,5 @@
 jQuery(document).ready(function(){
     	
-	//INLINE SLIDESHOWS
-	jQuery('.ctsc-slideshow-slides').each(function(){
-		var p = this.parentNode;
-		jQuery(this).cycle({
-			speed: jQuery('.ctsc-slideshow-slides', p).data('speed'),
-			timeout: jQuery('.ctsc-slideshow-slides', p).data('timeout'),
-			fx: jQuery('.ctsc-slideshow-slides', p).data('animation'),
-			pause: true,
-			pauseOnPagerHover: true,
-			containerResize: false,
-			slideResize: false,
-			fit: 1,
-			before: ctsc_resize_slideshow,
-			after: ctsc_resize_slideshow,
-			prev: jQuery('.ctsc-slideshow-prev', p),
-			next: jQuery('.ctsc-slideshow-next', p),
-			pager: jQuery('.ctsc-slideshow-pages', p)
-		});    
-	});
-	
-	//CONTENT SLIDERS
-	jQuery('.ctsc-slider-slides').each(function(){
-		var p = this.parentNode;
-		jQuery(this).cycle({
-			speed: jQuery('.ctsc-slider-slides', p).data('speed'),
-			timeout: jQuery('.ctsc-slider-slides', p).data('timeout'),
-			fx: jQuery('.ctsc-slider-slides', p).data('animation'),
-			pause: true,
-			pauseOnPagerHover: true,
-			containerResize: false,
-			slideResize: false,
-			fit: 1,
-			before: ctsc_resize_slideshow,
-			after: ctsc_resize_slideshow,
-			prev: jQuery('.ctsc-slider-prev', p),
-			next: jQuery('.ctsc-slider-next', p),
-			pager: jQuery('.ctsc-slider-pages', p)
-		});    
-	});
-	
 	jQuery('.ctsc-map').each(function() {
 		var data = jQuery(this).data(), // Get the data from this element
 		options = { // Create map options object

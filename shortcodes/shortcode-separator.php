@@ -4,6 +4,8 @@
 if(!function_exists('ctsc_shortcode_separator')){
 	function ctsc_shortcode_separator($atts, $content = null){
 		wp_enqueue_style('ctsc-fontawesome');
+		wp_enqueue_script('ctsc-core');
+		
 		$attributes = extract(shortcode_atts(array(
 		'style' => '',
 		'title' => '',

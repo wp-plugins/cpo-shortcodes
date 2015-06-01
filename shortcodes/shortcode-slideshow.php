@@ -9,14 +9,15 @@ if(!class_exists('ctsc_shortcode_slideshow')){
 		
 		/* slideshow Wrapper Shortcode */
 		function shortcode_create($atts, $content = null){
-			wp_enqueue_script('ctsc-core');
-			wp_enqueue_script('ctsc-toggles');
-			wp_enqueue_script('ctsc-cycle');
+			wp_enqueue_script('cpotheme-cycle');
 			
 			$attributes = extract(shortcode_atts(array(
 			'effect' => 'fade', 
 			'images' => '', 
-			'speed' => '1500', 
+			'background' => '', 
+			'padding' => '', 
+			'gradient' => '', 
+			'speed' => '800', 
 			'timeout' => '6000', 
 			'navigation' => '', 
 			'pager' => '', 
@@ -26,11 +27,30 @@ if(!class_exists('ctsc_shortcode_slideshow')){
 			'animation' => ''),
 			$atts));		
 			
-			$element_effect = ' data-animation = "'.esc_attr($effect).'"';
-			$element_speed = ' data-speed = "'.esc_attr($speed).'"';
-			$element_timeout = ' data-timeout = "'.esc_attr($timeout).'"';
+			$element_effect = ' data-cycle-fx = "'.esc_attr($effect).'"';
+			$element_background = '';
+			$element_padding = '';
+			$element_speed = ' data-cycle-speed = "'.esc_attr($speed).'"';
+			$element_timeout = ' data-cycle-timeout = "'.esc_attr($timeout).'"';
 			$element_class = ' '.$class;
 			$element_id = $id != '' ? ' id="'.$id.'"' : '';
+			
+			//Background color -- if gradient is set, add it as well
+			if($background != ''){
+				$element_background = ' background:'.$background.';';
+				if($gradient != ''){
+					$element_background .= '
+					background:-moz-linear-gradient(top, '.$background.' 0%, '.$gradient.' 100%);
+					background:-webkit-linear-gradient(top, '.$background.' 0%, '.$gradient.' 100%); 
+					background:linear-gradient(to bottom, '.$background.' 0%, '.$gradient.' 100%);
+					filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=\''.$background.'\', endColorstr=\''.$gradient.'\',GradientType=0);';
+				}
+			}
+			
+			//Background color -- if gradient is set, add it as well
+			if($padding != ''){
+				$element_padding = ' padding:'.$padding.';';
+			}
 			
 			//Entrace effects and delay
 			if($animation != ''){
@@ -39,8 +59,11 @@ if(!class_exists('ctsc_shortcode_slideshow')){
 				$element_class .= ' ctsc-animation ctsc-animation-'.$animation;
 			}
 			
-			$output = '<div class="ctsc-slideshow '.$element_class.'"'.$element_id.'>';
-			$output .= '<div class="ctsc-slideshow-slides"'.$element_effect.$element_speed.$element_timeout.'>';
+			$slideshow_style = ' style="'.$element_background.$element_padding.'"';
+			$slides_style = ' style="'.'"';
+			
+			$output = '<div class="ctsc-slideshow '.$element_class.'"'.$element_id.$slideshow_style.'>';
+			$output .= '<div class="ctsc-slideshow-slides cycle-slideshow" '.$slides_style.' data-cycle-slides=".ctsc-slideshow-slide" data-cycle-prev=".ctsc-slideshow-prev" data-cycle-next=".ctsc-slideshow-next" data-cycle-pager=".ctsc-slideshow-pages" '.$element_effect.$element_speed.$element_timeout.'>';
 			$output .= ctsc_do_shortcode($content);
 			$output .= '</div>';
 			if($navigation != 'none'){
@@ -67,8 +90,8 @@ if(!class_exists('ctsc_shortcode_slide')){
 		/* Single Slide Shortcode -- For use within the content slideshow */
 		function shortcode_create($atts, $content = null){
 			wp_enqueue_script('ctsc-core');
-			wp_enqueue_script('ctsc-toggles');
-			wp_enqueue_script('ctsc-cycle');
+			//wp_enqueue_script('ctsc-toggles');
+			wp_enqueue_script('cpothemes-cycle');
 			
 			$attributes = extract(shortcode_atts(array(
 			'id' => '',

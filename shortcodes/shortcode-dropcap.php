@@ -3,18 +3,10 @@
 /* Dropcap Shortcode */
 if(!function_exists('ctsc_shortcode_dropcap')){
 	function ctsc_shortcode_dropcap($atts, $content = null){
-		wp_enqueue_script('ctsc-cycle');
-		wp_enqueue_script('ctsc-waypoints');
-		wp_enqueue_script('ctsc-toggles');
-		wp_enqueue_script('ctsc-core');
-		wp_enqueue_style('ctsc-shortcodes');
-		wp_enqueue_style('ctsc-fontawesome');
-		
 		$attributes = extract(shortcode_atts(array(
 		'title' => '',
 		'style' => '',
-		'color' => '',
-		'icon' => ''), $atts));
+		'color' => ''), $atts));
 		
 		$title = trim(strip_tags($title));
 		$color = trim(strip_tags($color));

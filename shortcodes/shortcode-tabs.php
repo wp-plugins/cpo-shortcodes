@@ -4,8 +4,6 @@
 if(!function_exists('ctsc_shortcode_tablist')){
 	function ctsc_shortcode_tablist($atts, $content = null){
 		//Enqueue necessary scripts
-		wp_enqueue_script('jquery-ui-tabs');
-		wp_enqueue_script('ctsc-core');
 		wp_enqueue_script('ctsc-toggles');
 		
 		$attributes = extract(shortcode_atts(array('style' => 'horizontal'), $atts));

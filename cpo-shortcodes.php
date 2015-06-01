@@ -3,7 +3,7 @@
 Plugin Name: CPO Shortcodes
 Description: Lets you use over 30 different shortcodes to create incredible, rich-media pages. You can easily insert them using a shortcode generator added to the WordPress visual editor toolbar.
 Author: CPOThemes
-Version: 1.2.2
+Version: 1.2.3
 Author URI: http://www.cpothemes.com
 */
 
@@ -26,17 +26,11 @@ add_action('wp_enqueue_scripts', 'ctsc_scripts_front');
 function ctsc_scripts_front( ){
     $scripts_path = plugins_url('scripts/' , __FILE__);
 	
-	//Enqueue necessary scripts already in the WordPress core
-	wp_enqueue_script('jquery-ui-core');
-	wp_enqueue_script('jquery-ui-widget');
-	wp_enqueue_script('jquery-effects-core');
-	wp_enqueue_script('jquery-effects-fade');
-	
 	//Register custom scripts for later enqueuing
-	wp_register_script('ctsc-cycle', $scripts_path.'jquery-cycle.js', array());
+	wp_register_script('ctsc-core', $scripts_path.'core.js', array('jquery'), false, true);
 	wp_register_script('ctsc-waypoints', $scripts_path.'jquery-waypoints.js', array());
-	wp_register_script('ctsc-toggles', $scripts_path.'shortcodes-toggles.js', array('jquery-ui-accordion', 'jquery-ui-tabs'));
-	wp_enqueue_script('ctsc-core', $scripts_path.'core.js', array(), false, true);
+	wp_register_script('ctsc-toggles', $scripts_path.'shortcodes-toggles.js', array('jquery-ui-core', 'jquery-ui-widget', 'jquery-ui-tabs'));
+	wp_register_script('cpotheme-cycle', $scripts_path.'jquery-cycle2.js', array('jquery'), false, true);
 }
 
 

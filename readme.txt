@@ -20,21 +20,25 @@ By installing this plugin, you will be able to embed all sorts of interactive el
 This plugin is designed to give you as much freedom as possible by making each shortcode as flexible as possible. Every one of these design pieces can be configured in many different ways, allowing you to pick any size, color or shape.
 
 = Included Shortcodes =
-* Buttons
-* Focus boxes
 * Accordions
-* Tabbed content
+* Animation areas
+* Buttons
+* Dropcaps
+* Focus boxes
+* Google Maps
 * Icon Boxes
+* Item lists
+* Leading paragraphs
+* Notifications
 * Number Counters
+* Optin Forms (Mailchimp)
 * Progress Bars
 * Separators
-* Notifications
+* Tabbed content
 * Testimonials
 * Team Members
-* Leading paragraphs
-* Dropcaps
-* Item lists
-* Google Maps
+* Sections
+* Separators
 * Spacers
 
 = Advanced Shortcodes =
@@ -84,6 +88,10 @@ CPO Shortcodes also includes an number of more advanced shortcodes that let you 
 5. Add custom-colored pricing tables to your pages
 
 == Changelog ==
+
+= 1.2.3 =
+* Changed the Cycle library to Cycle 2.
+* Optimized performance by loading JS scripts only when needed
 
 = 1.2.2 =
 * Fixed the section shortcode not being included.

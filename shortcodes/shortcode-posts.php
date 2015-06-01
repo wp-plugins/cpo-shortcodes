@@ -3,9 +3,7 @@
 /* Recent Posts Shortcode */
 if(!function_exists('ctsc_shortcode_posts')){
 	function ctsc_shortcode_posts($atts, $content = null){
-		wp_enqueue_script('ctsc-cycle');
 		wp_enqueue_script('ctsc-waypoints');
-		wp_enqueue_script('ctsc-toggles');
 		wp_enqueue_script('ctsc-core');
 		wp_enqueue_style('ctsc-shortcodes');
 		wp_enqueue_style('ctsc-fontawesome');

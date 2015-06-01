@@ -4,11 +4,7 @@
 if(!function_exists('ctsc_shortcode_accordion')){
 	function ctsc_shortcode_accordion($atts, $content = null){
 		//Enqueue necessary scripts
-		wp_enqueue_script('jquery-ui-accordion');
-		wp_enqueue_script('jquery-ui-tabs');
-		wp_enqueue_script('ctsc-core');
 		wp_enqueue_script('ctsc-toggles');
-		wp_enqueue_style('ctsc-fontawesome');
 		
 		$attributes = extract(shortcode_atts(array(
 		'title' => '(No Title)', 
@@ -35,9 +31,10 @@ if(!function_exists('ctsc_shortcode_accordion')){
 		$element_id = $id != '' ? ' id="'.$id.'"' : '';
 				
 		//Accordion Icon
-		if($icon != '') 
+		if($icon != ''){
 			$element_icon = '<span class="ctsc-accordion-icon primary_color icon-'.esc_attr($icon).'"></span> ';
-		
+			wp_enqueue_style('ctsc-fontawesome');
+		}
 		
 		//Accordion State
 		if($state == 'open'){

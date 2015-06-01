@@ -1,3 +1,7 @@
+= 1.2.3 =
+* Changed the Cycle library to Cycle 2.
+* Optimized performance by loading JS scripts only when needed
+
 = 1.2.2 =
 * Fixed the section shortcode not being included.
 * Added missing shortcodes to the visual editor generator.
