@@ -1,19 +1,33 @@
 <?php
 
-	
 //Abstracted function for retrieving specific options inside option arrays
 if(!function_exists('ctsc_get_option')){
-	function ctsc_get_option($option_name = '', $option_array = 'ctsc_settings', $multilingual = true){
-		//Determines whether to grab current language, or original language's option
-		if($multilingual)
-			$option_list_name = $option_array.ctsc_wpml_current_language();
-		else
-			$option_list_name = $option_array;
+	function ctsc_get_option($option_name = '', $option_array = 'ctsc_settings'){
+		$option_list_name = $option_array;
+		
 		$option_list = get_option($option_list_name, false);
-		if($option_list && isset($option_list[$option_name]))
+		
+		$option_value = '';
+		//If options exists and is not empty, get value
+		if($option_list && isset($option_list[$option_name]) && (is_bool($option_list[$option_name]) === true || $option_list[$option_name] !== '')){
 			$option_value = $option_list[$option_name];
-		else
-			$option_value = false;
+		}
+		
+		//If option is empty, check whether it needs a default value
+		if($option_value === '' || !isset($option_list[$option_name])){
+			$options = ctsc_metadata_settings();
+			//If option cannot be empty, use default value
+			if(!isset($options[$option_name]['empty'])){
+				if(isset($options[$option_name]['default'])){
+					$option_value = $options[$option_name]['default'];
+				}
+			//If it can be empty but not set, use default value
+			}elseif(!isset($option_list[$option_name])){
+				if(isset($options[$option_name]['default'])){
+					$option_value = $options[$option_name]['default'];
+				}
+			}
+		}
 		return $option_value;
 	}
 }
@@ -21,7 +35,7 @@ if(!function_exists('ctsc_get_option')){
 //Abstracted function for updating specific options inside arrays
 if(!function_exists('ctsc_update_option')){
 	function ctsc_update_option($option_name, $option_value, $option_array = 'ctsc_settings'){
-		$option_list_name = $option_array.ctsc_wpml_current_language();
+		$option_list_name = $option_array;
 		$option_list = get_option($option_list_name, false);
 		if(!$option_list)
 			$option_list = array();
@@ -30,20 +44,6 @@ if(!function_exists('ctsc_update_option')){
 			return true;
 		else
 			return false;
-	}
-}
-
-//Returns the current language's code in the event that WPML is active
-if(!function_exists('ctsc_wpml_current_language')){
-	function ctsc_wpml_current_language(){
-		$language_code = '';
-		if(ctsc_custom_wpml_active()){		
-			$default_language = ctsc_custom_wpml_default_language();
-			$active_language = ICL_LANGUAGE_CODE;
-			if($active_language != $default_language)
-				$language_code = '_'.$active_language;
-		}
-		return $language_code;
 	}
 }
 

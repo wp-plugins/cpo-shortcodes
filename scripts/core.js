@@ -38,11 +38,6 @@ jQuery(document).ready(function(){
 	});
 });
 
-//Resizes slideshow height after each transition
-function ctsc_resize_slideshow(curr, next, opts, fwd) {
-	var ht = jQuery(this).height();
-	jQuery(this).parent().animate({height: ht});
-}
 
 function ctsc_waypoint_fade(){
 	if(jQuery.isFunction(jQuery.fn.waypoint)){

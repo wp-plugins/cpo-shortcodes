@@ -71,7 +71,7 @@ if(!function_exists('ctsc_shortcode_button')){
 			$icon = '<span class="ctsc-button-icon icon-'.htmlentities($icon).'"></span> ';
 		}
 		
-		//Entrace effects and delay
+		//Entrance effects and delay
 		if($animation != ''){
 			wp_enqueue_script('ctsc-waypoints');
 			wp_enqueue_script('ctsc-core');			

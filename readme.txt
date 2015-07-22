@@ -3,15 +3,13 @@ Contributors: cpothemes
 Tags: button, counter, message, shortcode, share, gallery, slideshow, accordion, toggle, content, short code, tooltip, jquery, spoiler, links, list, custom, leading, notice, icon, touch, icons, team, testimonial, bar, progress, feed, portfolio, shortcodes, map, google map, animation, css3, transition, pricing, pricing table
 Requires at least: 3.9
 Tested up to: 4.1.0
-Stable tag: 1.2.2
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Add all sorts of multimedia elements to your pages with this shortcode pack, comprised of over 30+ different elements.
 
 == Description ==
-
-**The 1.2.0 update added a new shortcode prefix that can be configured in Settings > CPO Shortcodes, to avoid conflicts with other plugins. If you used this plugin prior to version 1.2.0, you will have to leave the prefix empty to keep all shortcodes working. Should you need to download the 1.1.0 version, you can find it here: [Download CPO Shortcodes 1.1.0](http://cpothemes.com/cpo-shortcodes-1.1.0.zip)**
 
 [CPO Shortcodes](http://cpothemes.com/plugin/cpo-shortcodes) is a complete shortcode pack that gives you extreme flexibility for designing high-quality content.
 
@@ -45,8 +43,8 @@ This plugin is designed to give you as much freedom as possible by making each s
 
 CPO Shortcodes also includes an number of more advanced shortcodes that let you create highly refined pages:
 
-* **Column layouts** - Lay out your content in up to 6 columns at a time, including multiple combinations.
-* **Post lists** - Create lists of any kind of post anywhere, either as a list or in grid format. You can create your own portfolio listing this way.
+* **Column Layouts** - Lay out your content in up to 6 columns at a time, including multiple combinations.
+* **Post Listings** - Create lists of any kind of post anywhere, either as a list or in grid format. You can create your own portfolio listing this way.
 * **Pricing Tables** - Display your prices with a beautifully-designed pricing table, flexible enough that you can tweak it to maximize conversions.
 * **Content Slideshows** - Create slideshows with virtually anything in them, including images, text, and even other shortcodes too.
 
@@ -88,6 +86,12 @@ CPO Shortcodes also includes an number of more advanced shortcodes that let you 
 5. Add custom-colored pricing tables to your pages
 
 == Changelog ==
+
+= 1.3.0 =
+* Changed the settings page to use the native WordPress Settings API.
+* Overhauled the shortcode generator and added a revamped interface.
+* Reorganized some of the shortcodes in the visaul editor button.
+* Added better handling of defaults.
 
 = 1.2.3 =
 * Changed the Cycle library to Cycle 2.

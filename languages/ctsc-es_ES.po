@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CPO Extensions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-02 15:42+0100\n"
-"PO-Revision-Date: 2015-03-02 15:44+0100\n"
+"POT-Creation-Date: 2015-07-17 15:43+0200\n"
+"PO-Revision-Date: 2015-07-17 15:43+0200\n"
 "Last-Translator: CPO <mvicedo@cpo.es>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -13,79 +13,22 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ./.\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.8.2\n"
 "X-Poedit-SearchPath-0: ../.\n"
 
-#: .././functions/custom.php:12
-msgid "CPO Shortcodes"
-msgstr "CPO Shortcodes"
+#: .././includes/metadata.php:9
+msgid "Shortcodes"
+msgstr "Shortcodes"
 
-#: .././functions/custom.php:34
-msgid "Changes have been saved."
-msgstr "Las opciones de configuraci&oacute;n han sido guardadas."
+#: .././includes/metadata.php:10
+msgid "Configure the behavior of shortcodes."
+msgstr "Configura el comportamiento de los shortcodes."
 
-#: .././functions/custom.php:39
-msgid "Changes could not be saved."
-msgstr "Las opciones de configuraci&oacute;n no han podido ser guardadas."
-
-#: .././functions/custom.php:138
-msgid "Save Settings"
-msgstr "Guardar"
-
-#: .././functions/custom.php:210 .././functions/custom.php:232
-#: .././functions/custom.php:269
-#, fuzzy
-msgid "Theme Documentation"
-msgstr "Configuraci&oacute;n"
-
-#: .././functions/custom.php:212 .././functions/custom.php:273
-msgid "More Themes"
-msgstr "Más Temas"
-
-#: .././functions/custom.php:234
-#, fuzzy
-msgid "Support Forum"
-msgstr "Soporte"
-
-#: .././functions/custom.php:249
-#, fuzzy
-msgid "Theme Version"
-msgstr "Opciones del Tema"
-
-#: .././functions/custom.php:271
-#, fuzzy
-msgid "Support Forums"
-msgstr "Soporte"
-
-#: .././functions/custom.php:346
-msgid "default"
-msgstr "por defecto"
-
-#: .././functions/forms.php:43
-msgid "Yes"
-msgstr "S&iacute;"
-
-#: .././functions/forms.php:46
-msgid "No"
-msgstr "No"
-
-#: .././functions/forms.php:134
-msgid "Upload"
-msgstr "Subir"
-
-#: .././functions/forms.php:149
-msgid "This is a font preview"
-msgstr "Esta es una previsualización"
-
-#: .././metadata/metadata-general.php:38
-msgid "(None)"
-msgstr "(Ninguno)"
-
-#: .././metadata/metadata-settings.php:9
+#: .././includes/metadata.php:24
 msgid "Shortcode Prefix"
 msgstr "Prefijo de Shortcodes"
 
-#: .././metadata/metadata-settings.php:10
+#: .././includes/metadata.php:25
 msgid ""
 "Specifies a prefix for all shortcodes, so that you may avoid possible "
 "conflicts when installing themes or other plugins. If using a prefix, an "
@@ -95,84 +38,112 @@ msgstr ""
 "con otros temas o plugins instalados. Si utilizas un prefijo, se utilizará "
 "una barra (_) como separador."
 
-#: .././shortcodes/shortcode-column.php:235
-msgid "Background Image"
-msgstr "Imagen de Fondo"
-
-#: .././shortcodes/shortcode-column.php:242
-#, fuzzy
-msgid "Background Color"
-msgstr "Color de Fondo en Páginas"
-
-#: .././shortcodes/shortcode-column.php:249
-#, fuzzy
-msgid "Background Style"
-msgstr "Textura de Fondo"
-
-#: .././shortcodes/shortcode-column.php:256
-#, fuzzy
-msgid "Text Color"
-msgstr "Color de Cabeceras"
-
-#: .././shortcodes/shortcode-column.php:264
-#, fuzzy
-msgid "Border Width"
-msgstr "Por Campo de Orden"
-
-#: .././shortcodes/shortcode-column.php:266
-#: .././shortcodes/shortcode-column.php:274
-msgid "Border"
-msgstr "Borde"
-
-#: .././shortcodes/shortcode-column.php:272
-#, fuzzy
-msgid "Border Color"
-msgstr "Color de Cabeceras"
-
-#: .././shortcodes/shortcode-column.php:281
-#, fuzzy
-msgid "Top Padding"
-msgstr "Superior derecha"
-
-#: .././shortcodes/shortcode-column.php:283
-#: .././shortcodes/shortcode-column.php:291
-#: .././shortcodes/shortcode-column.php:299
-#: .././shortcodes/shortcode-column.php:307
-msgid "Layout"
-msgstr "Estructura"
-
-#: .././shortcodes/shortcode-column.php:289
-#, fuzzy
-msgid "Right Padding"
-msgstr "Branding del Sitio"
-
-#: .././shortcodes/shortcode-column.php:297
-#, fuzzy
-msgid "Bottom Padding"
-msgstr "Inferior derecha"
-
-#: .././shortcodes/shortcode-column.php:305
-#, fuzzy
-msgid "Left Padding"
-msgstr "Cabeceras"
-
-#: .././shortcodes/shortcode-column.php:314
-msgid "Element ID"
-msgstr "ID del Elemento"
-
-#: .././shortcodes/shortcode-column.php:316
-#: .././shortcodes/shortcode-column.php:324
-msgid "Other"
-msgstr "Otro"
-
-#: .././shortcodes/shortcode-column.php:322
-msgid "CSS Classes"
-msgstr "Clases CSS"
-
-#: .././shortcodes/shortcode-posts.php:93
-#, fuzzy
+#: .././shortcodes/shortcode-posts.php:91
 msgid "By"
-msgstr "Cuerpo"
+msgstr "Por"
+
+#~ msgid "CPO Shortcodes"
+#~ msgstr "CPO Shortcodes"
+
+#~ msgid "Changes have been saved."
+#~ msgstr "Las opciones de configuraci&oacute;n han sido guardadas."
+
+#~ msgid "Changes could not be saved."
+#~ msgstr "Las opciones de configuraci&oacute;n no han podido ser guardadas."
+
+#~ msgid "Save Settings"
+#~ msgstr "Guardar"
+
+#, fuzzy
+#~ msgid "Theme Documentation"
+#~ msgstr "Configuraci&oacute;n"
+
+#~ msgid "More Themes"
+#~ msgstr "Más Temas"
+
+#, fuzzy
+#~ msgid "Support Forum"
+#~ msgstr "Soporte"
+
+#, fuzzy
+#~ msgid "Theme Version"
+#~ msgstr "Opciones del Tema"
+
+#, fuzzy
+#~ msgid "Support Forums"
+#~ msgstr "Soporte"
+
+#~ msgid "default"
+#~ msgstr "por defecto"
+
+#~ msgid "Yes"
+#~ msgstr "S&iacute;"
+
+#~ msgid "No"
+#~ msgstr "No"
+
+#~ msgid "Upload"
+#~ msgstr "Subir"
+
+#~ msgid "This is a font preview"
+#~ msgstr "Esta es una previsualización"
+
+#~ msgid "(None)"
+#~ msgstr "(Ninguno)"
+
+#~ msgid "Background Image"
+#~ msgstr "Imagen de Fondo"
+
+#, fuzzy
+#~ msgid "Background Color"
+#~ msgstr "Color de Fondo en Páginas"
+
+#, fuzzy
+#~ msgid "Background Style"
+#~ msgstr "Textura de Fondo"
+
+#, fuzzy
+#~ msgid "Text Color"
+#~ msgstr "Color de Cabeceras"
+
+#, fuzzy
+#~ msgid "Border Width"
+#~ msgstr "Por Campo de Orden"
+
+#~ msgid "Border"
+#~ msgstr "Borde"
+
+#, fuzzy
+#~ msgid "Border Color"
+#~ msgstr "Color de Cabeceras"
+
+#, fuzzy
+#~ msgid "Top Padding"
+#~ msgstr "Superior derecha"
+
+#~ msgid "Layout"
+#~ msgstr "Estructura"
+
+#, fuzzy
+#~ msgid "Right Padding"
+#~ msgstr "Branding del Sitio"
+
+#, fuzzy
+#~ msgid "Bottom Padding"
+#~ msgstr "Inferior derecha"
+
+#, fuzzy
+#~ msgid "Left Padding"
+#~ msgstr "Cabeceras"
+
+#~ msgid "Element ID"
+#~ msgstr "ID del Elemento"
+
+#~ msgid "Other"
+#~ msgstr "Otro"
+
+#~ msgid "CSS Classes"
+#~ msgstr "Clases CSS"
 
 #~ msgid "Accordion"
 #~ msgstr "Acordeón"

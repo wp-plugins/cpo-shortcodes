@@ -3,7 +3,7 @@
 Plugin Name: CPO Shortcodes
 Description: Lets you use over 30 different shortcodes to create incredible, rich-media pages. You can easily insert them using a shortcode generator added to the WordPress visual editor toolbar.
 Author: CPOThemes
-Version: 1.2.3
+Version: 1.3.0
 Author URI: http://www.cpothemes.com
 */
 
@@ -28,27 +28,10 @@ function ctsc_scripts_front( ){
 	
 	//Register custom scripts for later enqueuing
 	wp_register_script('ctsc-core', $scripts_path.'core.js', array('jquery'), false, true);
-	wp_register_script('ctsc-waypoints', $scripts_path.'jquery-waypoints.js', array());
+	wp_register_script('ctsc-waypoints', $scripts_path.'jquery-waypoints.js', array('jquery'));
 	wp_register_script('ctsc-toggles', $scripts_path.'shortcodes-toggles.js', array('jquery-ui-core', 'jquery-ui-widget', 'jquery-ui-tabs'));
 	wp_register_script('cpotheme-cycle', $scripts_path.'jquery-cycle2.js', array('jquery'), false, true);
 }
-
-
-//Add Admin scripts
-if(!function_exists('ctsc_scripts_back')){
-	add_action('admin_enqueue_scripts', 'ctsc_scripts_back');
-	function ctsc_scripts_back( ){
-		$scripts_path = plugins_url('scripts/' , __FILE__);
-	
-		//Common scripts
-		wp_enqueue_script('jquery-ui-core');
-		wp_enqueue_script('jquery-ui-widget');
-		wp_enqueue_script('jquery-effects-core');
-		wp_enqueue_script('jquery-effects-fade');
-		wp_enqueue_script('ctsc-admin-js', $scripts_path.'admin.js');
-	}
-}
-
 
 //Add public stylesheets
 add_action('wp_enqueue_scripts', 'ctsc_add_styles');
@@ -91,23 +74,6 @@ function ctsc_shortcode_tinymce_buttons($button_list){
    return $button_list; 
 } 	
 
-if(function_exists('vc_map')){
-	function ctsc_param_icon($settings, $value) {
-		$dependency = vc_generate_dependencies_attributes($settings);
-		$output = '<div class="my_param_block">';
-		$output .= '<select class="wpb_vc_param_value wpb-select fontawesome" name="'.$settings['param_name'].'" '.$dependency.'>';
-		$icon_list = ctsc_metadata_icons();
-		foreach($icon_list as $icon_key => $icon_value){
-			$output .= '<option value="'.$icon_key.'"';
-			if($value == $icon_key) $output .= ' selected="selected"';
-			$output .= '>'.$icon_value.'</option>';
-		}
-		$output .= '</select>';	
-		$output .= '</div>';
-		return $output;
-	}
-	add_shortcode_param('iconlist', 'ctsc_param_icon');
-}
 
 //Allow shortcodes in text widgets
 add_filter('widget_text', 'do_shortcode');
@@ -116,13 +82,9 @@ add_filter('widget_text', 'do_shortcode');
 $core_path = plugin_dir_path(__FILE__);
 
 //General
-require_once($core_path.'functions/custom.php');
-require_once($core_path.'functions/forms.php');
-require_once($core_path.'functions/settings.php');
-require_once($core_path.'functions/general.php');
-//Metadata
-require_once($core_path.'metadata/metadata-general.php');
-require_once($core_path.'metadata/metadata-settings.php');
+require_once($core_path.'includes/general.php');
+require_once($core_path.'includes/settings.php');
+require_once($core_path.'includes/metadata.php');
 //Shortcodes
 require_once($core_path.'shortcodes/shortcode-accordion.php');
 require_once($core_path.'shortcodes/shortcode-animation.php');

@@ -63,7 +63,7 @@ input.ctsc-submit:hover { }
 
 .font_preview { display:block; padding:20px 15px; font-size:20px; background:#fff; border:1px solid #ddd; margin:5px 0; box-shadow:0 2px 2px -2px rgba(0,0,0,0.3); border-radius:2px; }
 
-
+.mce-window.mce-container.mce-ctsc-generator-popup .mce-container-body.mce-abs-layout { overflow:hidden; }
 
 /* Small Screens */
 @media only screen and (max-width:1024px){
