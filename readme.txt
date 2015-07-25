@@ -137,3 +137,8 @@ CPO Shortcodes also includes an number of more advanced shortcodes that let you 
 
 = 1.0 =
 * Plugin release, yay!
+
+== Upgrade Notice ==
+
+= 1.3.1 =
+New shortcode update! You can now create registration forms on your site with the [ct_register] shortcode. 
