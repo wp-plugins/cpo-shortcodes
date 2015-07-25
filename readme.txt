@@ -140,5 +140,5 @@ CPO Shortcodes also includes an number of more advanced shortcodes that let you 
 
 == Upgrade Notice ==
 
-= 1.3.1 =
+= 1.3.0 =
 New shortcode update! You can now create registration forms on your site with the [ct_register] shortcode. 
