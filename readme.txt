@@ -3,7 +3,7 @@ Contributors: cpothemes
 Tags: button, counter, register, message, shortcode, share, gallery, slideshow, accordion, toggle, content, short code, tooltip, jquery, spoiler, links, list, custom, leading, notice, icon, touch, icons, team, testimonial, bar, progress, feed, portfolio, shortcodes, map, google map, animation, css3, transition, pricing, pricing table
 Requires at least: 4.0
 Tested up to: 4.2.2
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -88,6 +88,9 @@ CPO Shortcodes also includes an number of more advanced shortcodes that let you 
 
 == Changelog ==
 
+= 1.3.2 =
+* Minor fixes
+
 = 1.3.1 =
 * New shortcode: Registration form!
 
@@ -144,5 +147,5 @@ CPO Shortcodes also includes an number of more advanced shortcodes that let you 
 
 == Upgrade Notice ==
 
-= 1.3.1 =
+= 1.3.2 =
 New shortcode update! You can now create registration forms on your site with the [ct_register] shortcode. 

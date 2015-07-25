@@ -36,11 +36,10 @@ if(!function_exists('ctsc_shortcode_register')){
 				
 			//If form has been sent, there must be an error
 			if(isset($_POST['ctsc-register-submit'])){
-				$error_message = get_transient('ctsc-register-error');
+				$error_message = isset($_POST['ctsc-register-error']) ? esc_html($_POST['ctsc-register-error']) : false;
 				if($error_message){
 					wp_enqueue_style('ctsc-fontawesome');
 					$output .= '<div class="ctsc-message ctsc-message-error">'.$error_message.'</div>';
-					delete_transient('ctsc-register-error');
 				}
 			}
 		
@@ -161,7 +160,7 @@ function ctsc_register_new_user(){
 		}
 		
 		if($error){
-			set_transient('ctsc-register-error', $error, 3600);
+			$_POST['ctsc-register-error'] = $error;
 		}
 	} 
 }
