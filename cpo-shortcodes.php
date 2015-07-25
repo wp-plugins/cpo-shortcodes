@@ -3,7 +3,7 @@
 Plugin Name: CPO Shortcodes
 Description: Lets you use over 30 different shortcodes to create incredible, rich-media pages. You can easily insert them using a shortcode generator added to the WordPress visual editor toolbar.
 Author: CPOThemes
-Version: 1.3.0
+Version: 1.3.1
 Author URI: http://www.cpothemes.com
 */
 
@@ -75,6 +75,28 @@ function ctsc_shortcode_tinymce_buttons($button_list){
 } 	
 
 
+//Add Settings link in plugin list page
+add_filter('plugin_action_links', 'ctsc_action_links', 10, 2);
+function ctsc_action_links($links, $file){
+	if($file == 'cpo-shortcodes/cpo-shortcodes.php'){
+		$new_links = '<a href="'.admin_url('options-general.php?page=ctsc_settings').'">'.__('Settings', 'ctsc').'</a>';
+		array_unshift($links, $new_links);
+	}
+	return $links;
+}
+
+
+//Add upgrade notices for important changes
+add_action('in_plugin_update_message-cpo-shortcodes/cpo-shortcodes.php', 'ctsc_upgrade_notice', 10, 2);
+function ctsc_upgrade_notice($current, $new){
+	if(isset($new->upgrade_notice) && strlen(trim($new->upgrade_notice)) > 0){
+		echo '<p style="background-color:#d54e21; padding:10px; color:#f9f9f9; margin-top:10px">';
+		echo esc_html($new->upgrade_notice);
+		echo '</p>';
+	}
+}
+
+
 //Allow shortcodes in text widgets
 add_filter('widget_text', 'do_shortcode');
 
@@ -103,6 +125,7 @@ require_once($core_path.'shortcodes/shortcode-optin.php');
 require_once($core_path.'shortcodes/shortcode-posts.php');
 require_once($core_path.'shortcodes/shortcode-pricing.php');
 require_once($core_path.'shortcodes/shortcode-progress.php');
+require_once($core_path.'shortcodes/shortcode-register.php');
 require_once($core_path.'shortcodes/shortcode-separator.php');
 require_once($core_path.'shortcodes/shortcode-section.php');
 require_once($core_path.'shortcodes/shortcode-slideshow.php');

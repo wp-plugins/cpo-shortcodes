@@ -334,6 +334,26 @@
 						},
 					]
 				},{
+					text:'User Management',
+					menu: [			
+						{
+							text:'Registration Form',
+							onclick: function(){ 
+								editor.windowManager.open({
+									title: 'Add Registration Form',
+									body: ctsc_generator_register,
+									onsubmit: function(e){
+										var element_id = e.data.id !== '' ? ' id="' + e.data.id + '"' : '';
+										var element_class = e.data.class !== '' ? ' class="' + e.data.class + '"' : '';
+										var element_animation = e.data.animation !== '' ? ' animation="' + e.data.animation + '"' : '';
+										var element_firstname = e.data.firstname !== '' ? ' firstname="' + e.data.firstname + '"' : '';
+										editor.selection.setContent('[' + ctsc_vars.prefix + 'register redirect="' + e.data.redirect +  '" email="' + e.data.email +  '" username="' + e.data.username + '" password="' + e.data.password +  '" submit="' + e.data.submit + '" ' + element_firstname + element_id + element_class + element_animation + ']' + e.data.content +  '[/' + ctsc_vars.prefix + 'register]');
+									}
+								});
+							}
+						},
+					]
+				},{
 					text:'Layout',
 					menu: [			
 						{
@@ -1335,6 +1355,21 @@ var ctsc_generator_posts = [
 		{ text:'Show', value:'normal' },
 		{ text:'Hide', value:'none' },
 	]},
+	{ type:'textbox', name:'id', label:'Element ID', value:'' },
+	{ type:'textbox', name:'class', label:'CSS Classes' },
+	{ type:'listbox', name:'animation', label:'Entrance Animation', values:ctsc_generator_general_animation },		
+];
+
+
+//Registration Form
+var ctsc_generator_register = [
+	{ type:'textbox', name:'redirect', label:'Redirect URL', value:'', tooltip:'Redirect the user after successfully registering. Example: http://mysite.com' }, 
+	{ type:'textbox', name:'content', label:'Logged In Message', value:'', tooltip:'This content will be displayed when the user is logged in.' }, 
+	{ type:'textbox', name:'username', label:'Username Text', value:'Username' }, 
+	{ type:'textbox', name:'email', label:'Email Text', value:'Email' }, 
+	{ type:'textbox', name:'firstname', label:'First Name Text', value:'First Name', tooltip:'Leave empty to remove this field.' }, 
+	{ type:'textbox', name:'password', label:'Email Text', value:'Password' }, 
+	{ type:'textbox', name:'submit', label:'Submit Text', value:'Create Account' }, 
 	{ type:'textbox', name:'id', label:'Element ID', value:'' },
 	{ type:'textbox', name:'class', label:'CSS Classes' },
 	{ type:'listbox', name:'animation', label:'Entrance Animation', values:ctsc_generator_general_animation },		

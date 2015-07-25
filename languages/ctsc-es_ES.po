@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CPO Extensions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-17 15:43+0200\n"
-"PO-Revision-Date: 2015-07-17 15:43+0200\n"
+"POT-Creation-Date: 2015-07-24 19:54+0200\n"
+"PO-Revision-Date: 2015-07-24 19:55+0200\n"
 "Last-Translator: CPO <mvicedo@cpo.es>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -41,6 +41,38 @@ msgstr ""
 #: .././shortcodes/shortcode-posts.php:91
 msgid "By"
 msgstr "Por"
+
+#: .././shortcodes/shortcode-register.php:8
+msgid "First Name"
+msgstr "Nombre"
+
+#: .././shortcodes/shortcode-register.php:9
+msgid "Email"
+msgstr "Email"
+
+#: .././shortcodes/shortcode-register.php:10
+msgid "Username"
+msgstr "Nombre de Usuario"
+
+#: .././shortcodes/shortcode-register.php:11
+msgid "Password"
+msgstr "Contraseña"
+
+#: .././shortcodes/shortcode-register.php:12
+msgid "Create Account"
+msgstr "Crear Cuenta"
+
+#: .././shortcodes/shortcode-register.php:40
+msgid "Thank you for creating an account."
+msgstr "Gracias por crear una cuenta."
+
+#: .././shortcodes/shortcode-register.php:47
+msgid "All fields are required."
+msgstr "Todos los campos son requeridos."
+
+#: .././shortcodes/shortcode-register.php:49
+msgid "The username and email are taken."
+msgstr "El nombre de usuario y correo no están disponibles."
 
 #~ msgid "CPO Shortcodes"
 #~ msgstr "CPO Shortcodes"
@@ -538,9 +570,6 @@ msgstr "Por"
 
 #~ msgid "New contact form response by"
 #~ msgstr "Nueva respuesta en el formulario de contacto por"
-
-#~ msgid "Email"
-#~ msgstr "Email"
 
 #~ msgid "IP Address"
 #~ msgstr "Direcci&oacute;n IP"
@@ -1958,9 +1987,6 @@ msgstr "Por"
 
 #~ msgid "Tag"
 #~ msgstr "Etiqueta"
-
-#~ msgid "Username"
-#~ msgstr "Nombre de Usuario"
 
 #~ msgid "Home Menu"
 #~ msgstr "Menu de Inicio"

@@ -1,9 +1,9 @@
 === CPO Shortcodes ===
 Contributors: cpothemes
-Tags: button, counter, message, shortcode, share, gallery, slideshow, accordion, toggle, content, short code, tooltip, jquery, spoiler, links, list, custom, leading, notice, icon, touch, icons, team, testimonial, bar, progress, feed, portfolio, shortcodes, map, google map, animation, css3, transition, pricing, pricing table
-Requires at least: 3.9
-Tested up to: 4.1.0
-Stable tag: 1.3.0
+Tags: button, counter, register, message, shortcode, share, gallery, slideshow, accordion, toggle, content, short code, tooltip, jquery, spoiler, links, list, custom, leading, notice, icon, touch, icons, team, testimonial, bar, progress, feed, portfolio, shortcodes, map, google map, animation, css3, transition, pricing, pricing table
+Requires at least: 4.0
+Tested up to: 4.2.2
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,6 +47,7 @@ CPO Shortcodes also includes an number of more advanced shortcodes that let you 
 * **Post Listings** - Create lists of any kind of post anywhere, either as a list or in grid format. You can create your own portfolio listing this way.
 * **Pricing Tables** - Display your prices with a beautifully-designed pricing table, flexible enough that you can tweak it to maximize conversions.
 * **Content Slideshows** - Create slideshows with virtually anything in them, including images, text, and even other shortcodes too.
+* **Registration Forms** - Create and embed beautiful registration forms to create a vibrant community around your website.
 
 = Other highlights =
 
@@ -86,6 +87,9 @@ CPO Shortcodes also includes an number of more advanced shortcodes that let you 
 5. Add custom-colored pricing tables to your pages
 
 == Changelog ==
+
+= 1.3.1 =
+* New shortcode: Registration form!
 
 = 1.3.0 =
 * Changed the settings page to use the native WordPress Settings API.
@@ -140,5 +144,5 @@ CPO Shortcodes also includes an number of more advanced shortcodes that let you 
 
 == Upgrade Notice ==
 
-= 1.3.0 =
+= 1.3.1 =
 New shortcode update! You can now create registration forms on your site with the [ct_register] shortcode. 

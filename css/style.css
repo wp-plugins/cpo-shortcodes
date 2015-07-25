@@ -477,6 +477,11 @@ body .ctsc-button-huge.ctsc-button-has-icon .ctsc-button-content { padding-left:
 .ctsc-counter-large { font-size:5em; }
 
 
+/* REGISTRATION FORM */
+.ctsc-register { margin:0 0; }
+.ctsc-register-field { margin:0 0 20px; }
+
+
 /* COLORS */
 .ctsc-primary-color { color:#f90; }
 .ctsc-primary-color-border { border-color:#f90; }
