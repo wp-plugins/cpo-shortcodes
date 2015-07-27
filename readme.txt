@@ -75,8 +75,10 @@ CPO Shortcodes also includes an number of more advanced shortcodes that let you 
 
 == Frequently Asked Questions ==
 
-[Visit Our Support Forum At CPOThemes](http://www.cpothemes.com/forums/)
+[Read The Documentation At CPOThemes](http://www.cpothemes.com/documentation/)
 
+= HELP! My shortcodes are not working! =
+Go to Settings > CPO Shortcodes and see what the **Shortcode Prefix** is. This prefix is meant to avoid conflicts with other plugins (in case you have a plugin that also has a --button-- shortcode). Simply make sure the shortcodes you are using correspond to the prefix in there. For example, if your prefix is **ct**, then you should use the **ct_button** shortcode. If you have an empty prefix, you can use just **button**.
 
 == Screenshots ==
 
