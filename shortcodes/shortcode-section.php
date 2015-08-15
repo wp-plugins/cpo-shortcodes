@@ -9,6 +9,7 @@ if(!function_exists('ctsc_shortcode_section')){
 		'title' => '', 
 		'subtitle' => '', 
 		'background' => '', 
+		'gradient' => '', 
 		'video' => '', 
 		'image' => '', 
 		'color' => '', 
@@ -22,7 +23,6 @@ if(!function_exists('ctsc_shortcode_section')){
 		//Set values
 		$element_background = '';
 		$element_gradient = '';
-		$element_description = trim(strip_tags($description));
 		$element_content = $content;
 		$element_position = ' ctsc-section-'.$position;
 		$element_color = ' ctsc-'.$color;
@@ -50,20 +50,23 @@ if(!function_exists('ctsc_shortcode_section')){
 		}
 		
 		//Background Image
+		$element_image = '';
 		if($image != '') {
 			$element_image = ' background-image:url('.ctsc_image_url($image).');';
 		}
 		
 		//Section Content Styles
 		if($padding != ''){
+			$padding = str_replace('px', '', $padding);
 			$element_padding = ' padding-top:'.$padding.'px; padding-bottom:'.$padding.'px;';
 		}
 		
 		//Entrace effects and delay
+		$anim_class = '';
 		if($animation != ''){
 			wp_enqueue_script('ctsc-waypoints');
 			wp_enqueue_script('ctsc-core');			
-			$element_class .= ' ctsc-animation ctsc-animation-'.$animation;
+			$anim_class = ' ctsc-animation ctsc-animation-'.$animation;
 		}
 		
 		$background_style = ' style="'.$element_background.$element_image.'"';
@@ -72,7 +75,7 @@ if(!function_exists('ctsc_shortcode_section')){
 		
 		//Output section
 		$output = '';
-		$output .= '<div class="ctsc-section ctsc-section-'.$element_class.$element_position.$element_color.'">';
+		$output .= '<div class="ctsc-section '.$element_class.$element_position.$element_color.'" '.$element_style.'>';
 		//Section output
 		if($video != ''){
 			$output .= '<div class="ctsc-section-video">';
@@ -82,7 +85,7 @@ if(!function_exists('ctsc_shortcode_section')){
 			$output .= '</div>';
 		} 
 		$output .= '<div class="ctsc-section-background"'.$background_style.'></div>';
-		$output .= '<div class="ctsc-section-content"'.$element_style.'>';
+		$output .= '<div class="ctsc-section-content '.$anim_class.'">';
 		if($title != ''){
 			$output .= '<div class="ctsc-section-heading">';
 			$output .= '<h2 class="ctsc-section-title">'.$title.'</h2>';

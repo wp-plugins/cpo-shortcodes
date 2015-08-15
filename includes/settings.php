@@ -81,5 +81,30 @@ if(!function_exists('ctsc_settings_defaults')){
 			}
 		}
 		update_option($option_name, $options_list);
+		
+		//Register review notice
+		if(!get_option('ctsc_install', false)){
+			update_option('ctsc_install', date('Y-m-d'));
+		}
 	}
+}
+
+
+//add_action('admin_init', 'ctsc_notice_check');
+function ctsc_notice_check(){
+    $install_date = get_option('ctsc_install', false);
+	if($install_date){
+		$current_date = strtotime();
+		if($past_date >= $install_date){
+			add_action('admin_notices', 'ctsc_notice_review');
+		}
+	}
+}
+
+function ctsc_notice_review() {
+    $reviewurl = 'https://wordpress.org/support/view/plugin-reviews/cpo-shortcodes?filter=5#postform';
+    $nobugurl = get_admin_url() . '?winwarnobug=1';
+    echo '<div class="updated">'; 
+    printf(__('You have been using our plugin for a week now, do you like it? If so, please leave us a review with your feedback! <a href="%s" target="_blank">Leave A Review</a> <a href="%s">Leave Me Alone</a>'), $reviewurl, $nobugurl);
+    echo '</div>';
 }

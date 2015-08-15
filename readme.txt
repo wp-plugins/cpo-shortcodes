@@ -2,8 +2,8 @@
 Contributors: cpothemes
 Tags: button, counter, register, message, shortcode, share, gallery, slideshow, accordion, toggle, content, short code, tooltip, jquery, spoiler, links, list, custom, leading, notice, icon, touch, icons, team, testimonial, bar, progress, feed, portfolio, shortcodes, map, google map, animation, css3, transition, pricing, pricing table
 Requires at least: 4.0
-Tested up to: 4.2.2
-Stable tag: 1.3.2
+Tested up to: 4.2
+Stable tag: 1.3.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,7 +47,7 @@ CPO Shortcodes also includes an number of more advanced shortcodes that let you 
 * **Post Listings** - Create lists of any kind of post anywhere, either as a list or in grid format. You can create your own portfolio listing this way.
 * **Pricing Tables** - Display your prices with a beautifully-designed pricing table, flexible enough that you can tweak it to maximize conversions.
 * **Content Slideshows** - Create slideshows with virtually anything in them, including images, text, and even other shortcodes too.
-* **Registration Forms** - Create and embed beautiful registration forms to create a vibrant community around your website.
+* **Registration & Login Forms** - Create and embed beautiful registration forms to create a vibrant community around your website.
 
 = Other highlights =
 
@@ -89,6 +89,10 @@ Go to Settings > CPO Shortcodes and see what the **Shortcode Prefix** is. This p
 5. Add custom-colored pricing tables to your pages
 
 == Changelog ==
+
+= 1.3.3 =
+* New shortcode: Login form!
+* Fixed PHP warnings as well as faulty generator links
 
 = 1.3.2 =
 * Minor fixes
@@ -149,5 +153,5 @@ Go to Settings > CPO Shortcodes and see what the **Shortcode Prefix** is. This p
 
 == Upgrade Notice ==
 
-= 1.3.2 =
-New shortcode update! You can now create registration forms on your site with the [ct_register] shortcode. 
+= 1.3.3 =
+We're adding better support for intranets: Create front-facing login forms with the [ct_login] shortcode. 

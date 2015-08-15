@@ -337,6 +337,24 @@
 					text:'User Management',
 					menu: [			
 						{
+							text:'Login Form',
+							onclick: function(){ 
+								editor.windowManager.open({
+									title: 'Add Login Form',
+									body: ctsc_generator_login,
+									onsubmit: function(e){
+										var element_id = e.data.id !== '' ? ' id="' + e.data.id + '"' : '';
+										var element_class = e.data.class !== '' ? ' class="' + e.data.class + '"' : '';
+										var element_animation = e.data.animation !== '' ? ' animation="' + e.data.animation + '"' : '';
+										var element_username = e.data.username !== '' ? ' username="' + e.data.username + '"' : '';
+										var element_password = e.data.password !== '' ? ' username="' + e.data.password + '"' : '';
+										var element_login = e.data.login !== '' ? ' username="' + e.data.login + '"' : '';
+										var element_remember = e.data.remember !== '' ? ' username="' + e.data.remember + '"' : '';
+										editor.selection.setContent('[' + ctsc_vars.prefix + 'login redirect="' + e.data.redirect +  '" ' + element_username + element_password + element_login + element_remember + element_id + element_class + element_animation + ']' + e.data.content +  '[/' + ctsc_vars.prefix + 'login]');
+									}
+								});
+							}
+						},{
 							text:'Registration Form',
 							onclick: function(){ 
 								editor.windowManager.open({
@@ -363,6 +381,9 @@
 									title: 'Add Section',
 									body: ctsc_generator_section,
 									onsubmit: function(e){
+										var element_id = e.data.id !== '' ? ' id="' + e.data.id + '"' : '';
+										var element_class = e.data.class !== '' ? ' class="' + e.data.class + '"' : '';
+										var element_animation = e.data.animation !== '' ? ' animation="' + e.data.animation + '"' : '';
 										editor.selection.setContent('[' + ctsc_vars.prefix + 'section title="' + e.data.title +  '" subtitle="' + e.data.subtitle +  '" background="' + e.data.background + '" gradient="' + e.data.gradient +  '" color="' + e.data.color +  '" padding="' + e.data.padding +  '" ' + element_id + element_class + element_animation + '][/' + ctsc_vars.prefix + 'section]');
 									}
 								});
@@ -394,6 +415,9 @@
 									title: 'Add separator',
 									body: ctsc_generator_separator,
 									onsubmit: function(e){
+										var element_id = e.data.id !== '' ? ' id="' + e.data.id + '"' : '';
+										var element_class = e.data.class !== '' ? ' class="' + e.data.class + '"' : '';
+										var element_animation = e.data.animation !== '' ? ' animation="' + e.data.animation + '"' : '';
 										editor.selection.setContent('[' + ctsc_vars.prefix + 'separator title="' + e.data.title +  '" icon="' + e.data.icon +  '" style="' + e.data.style +  '" color="' + e.data.color +  '" top="' + e.data.top +  '" ' + element_id + element_class + element_animation + '][/' + ctsc_vars.prefix + 'separator]');
 									}
 								});
@@ -1361,6 +1385,20 @@ var ctsc_generator_posts = [
 ];
 
 
+//Login Form
+var ctsc_generator_login = [
+	{ type:'textbox', name:'redirect', label:'Redirect URL', value:'', tooltip:'Redirect the user after a successful login. By default, the current page will be used. Example: http://mysite.com' }, 
+	{ type:'textbox', name:'content', label:'Logged In Message', value:'', tooltip:'This content will be displayed when the user is logged in.' }, 
+	{ type:'textbox', name:'username', label:'Username Text', value:'Username' }, 
+	{ type:'textbox', name:'password', label:'Password Text', value:'Password' }, 
+	{ type:'textbox', name:'remember', label:'Remember Me Text', value:'Remember Me' }, 
+	{ type:'textbox', name:'login', label:'Log In Button Text', value:'Log In' }, 
+	{ type:'textbox', name:'id', label:'Element ID', value:'' },
+	{ type:'textbox', name:'class', label:'CSS Classes' },
+	{ type:'listbox', name:'animation', label:'Entrance Animation', values:ctsc_generator_general_animation },		
+];
+
+
 //Registration Form
 var ctsc_generator_register = [
 	{ type:'textbox', name:'redirect', label:'Redirect URL', value:'', tooltip:'Redirect the user after successfully registering. Example: http://mysite.com' }, 
@@ -1368,7 +1406,7 @@ var ctsc_generator_register = [
 	{ type:'textbox', name:'username', label:'Username Text', value:'Username' }, 
 	{ type:'textbox', name:'email', label:'Email Text', value:'Email' }, 
 	{ type:'textbox', name:'firstname', label:'First Name Text', value:'First Name', tooltip:'Leave empty to remove this field.' }, 
-	{ type:'textbox', name:'password', label:'Email Text', value:'Password' }, 
+	{ type:'textbox', name:'password', label:'Password Text', value:'Password' }, 
 	{ type:'textbox', name:'submit', label:'Submit Text', value:'Create Account' }, 
 	{ type:'textbox', name:'id', label:'Element ID', value:'' },
 	{ type:'textbox', name:'class', label:'CSS Classes' },
@@ -1377,7 +1415,7 @@ var ctsc_generator_register = [
 
 
 //Section
-var ctsc_generator_section =[
+var ctsc_generator_section = [
 	{ type:'textbox', name:'title', label:'Title', value:'' },
 	{ type:'textbox', name:'subtitle', label:'SubTitle', value:'' },
 	{ type:'textbox', name:'background', label:'Background', value:'' },
@@ -1386,12 +1424,15 @@ var ctsc_generator_section =[
 		{ text:'Light', value:'light' },
 		{ text:'Dark', value:'dark' },
 	]},
-	{ type:'textbox', name:'padding', label:'Padding', value:'40px' },	
+	{ type:'textbox', name:'padding', label:'Padding', value:'40px' },
+	{ type:'textbox', name:'id', label:'Element ID', value:'' },
+	{ type:'textbox', name:'class', label:'CSS Classes' },
+	{ type:'listbox', name:'animation', label:'Entrance Animation', values:ctsc_generator_general_animation },	
 ];
 	
 
 //Columns
-var ctsc_generator_columns =[
+var ctsc_generator_columns = [
 	{ type:'listbox', name:'columns', label:'Columns', values:[
 		{ text:'2 Columns',  value:'2' },
 		{ text:'3 Columns', value:'3' },

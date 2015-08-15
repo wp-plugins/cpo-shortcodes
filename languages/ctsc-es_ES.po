@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CPO Extensions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-27 09:56+0200\n"
-"PO-Revision-Date: 2015-07-27 09:57+0200\n"
+"POT-Creation-Date: 2015-08-14 12:53+0200\n"
+"PO-Revision-Date: 2015-08-14 12:56+0200\n"
 "Last-Translator: CPO <mvicedo@cpo.es>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -13,12 +13,12 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ./.\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.2\n"
+"X-Generator: Poedit 1.8.3\n"
 "X-Poedit-SearchPath-0: ../.\n"
 
-#: .././cpo-shortcodes (Copia en conflicto de Casa 2015-07-26).php:82
+#: .././cpo-shortcodes.php:82
 msgid "Settings"
-msgstr ""
+msgstr "Ajustes"
 
 #: .././includes/metadata.php:9
 msgid "Shortcodes"
@@ -42,53 +42,58 @@ msgstr ""
 "con otros temas o plugins instalados. Si utilizas un prefijo, se utilizará "
 "una barra (_) como separador."
 
+#: .././shortcodes/shortcode-login.php:8
+#: .././shortcodes/shortcode-register.php:10
+msgid "Username"
+msgstr "Nombre de Usuario"
+
+#: .././shortcodes/shortcode-login.php:9
+#: .././shortcodes/shortcode-register.php:11
+msgid "Password"
+msgstr "Contraseña"
+
+#: .././shortcodes/shortcode-login.php:10
+msgid "Remember Me"
+msgstr "Recuérdame"
+
+#: .././shortcodes/shortcode-login.php:11
+msgid "Log In"
+msgstr "Acceder"
+
+#: .././shortcodes/shortcode-login.php:42
+msgid "I lost my password"
+msgstr "He olvidado mi contraseña"
+
 #: .././shortcodes/shortcode-posts.php:91
 msgid "By"
 msgstr "Por"
 
-#: .././shortcodes/shortcode-register (Copia en conflicto de Casa
-#: 2015-07-26).php:8 .././shortcodes/shortcode-register.php:8
+#: .././shortcodes/shortcode-register.php:8
 msgid "First Name"
 msgstr "Nombre"
 
-#: .././shortcodes/shortcode-register (Copia en conflicto de Casa
-#: 2015-07-26).php:9 .././shortcodes/shortcode-register.php:9
+#: .././shortcodes/shortcode-register.php:9
 msgid "Email"
 msgstr "Email"
 
-#: .././shortcodes/shortcode-register (Copia en conflicto de Casa
-#: 2015-07-26).php:10 .././shortcodes/shortcode-register.php:10
-msgid "Username"
-msgstr "Nombre de Usuario"
-
-#: .././shortcodes/shortcode-register (Copia en conflicto de Casa
-#: 2015-07-26).php:11 .././shortcodes/shortcode-register.php:11
-msgid "Password"
-msgstr "Contraseña"
-
-#: .././shortcodes/shortcode-register (Copia en conflicto de Casa
-#: 2015-07-26).php:12 .././shortcodes/shortcode-register.php:12
+#: .././shortcodes/shortcode-register.php:12
 msgid "Create Account"
 msgstr "Crear Cuenta"
 
-#: .././shortcodes/shortcode-register (Copia en conflicto de Casa
-#: 2015-07-26).php:111 2015-07-26).php:116
-#: .././shortcodes/shortcode-register.php:47
+#: .././shortcodes/shortcode-register.php:111
+#: .././shortcodes/shortcode-register.php:116
 msgid "All fields are required."
 msgstr "Todos los campos son requeridos."
 
-#: .././shortcodes/shortcode-register (Copia en conflicto de Casa
-#: 2015-07-26).php:121
+#: .././shortcodes/shortcode-register.php:121
 msgid "Please enter a valid email address."
 msgstr "Por favor, introduce una dirección de correo electrónico válida."
 
-#: .././shortcodes/shortcode-register.php:40
-msgid "Thank you for creating an account."
-msgstr "Gracias por crear una cuenta."
+#~ msgid "Thank you for creating an account."
+#~ msgstr "Gracias por crear una cuenta."
 
-#: .././shortcodes/shortcode-register.php:49
-msgid "The username and email are taken."
-msgstr "El nombre de usuario y correo no están disponibles."
+#~ msgid "The username and email are taken."
+#~ msgstr "El nombre de usuario y correo no están disponibles."
 
 #~ msgid "CPO Shortcodes"
 #~ msgstr "CPO Shortcodes"
